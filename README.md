@@ -1,6 +1,6 @@
 # Lógica y estructura de datos - IZO (2023)
 
-Repositorio de actividades para la materia Lógica y Estructura de Datos. Materia de 1° año de la carrera Tecnicatura en Desarrollo de Software dictada en el Instituto Superior Zona Oeste (ISPI 9045).
+Repositorio de actividades para la materia Lógica y Estructura de Datos. Materia de 1° año de la carrera Tecnicatura en Desarrollo de Software dictada en el Instituto Superior Zona Oeste (ISPI 9045). Se utiliza como guía de estudio el libro "Programación en C: Metodologías, Algoritmos y estructura de datos", de Luis Joyanes Aguilar y Ignacio Zahonero Martinez.
 
 ## Actividad 1
 
@@ -21,7 +21,7 @@ Repositorio de actividades para la materia Lógica y Estructura de Datos. Materi
   conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al
   momento de la cotización.
 
-## Ejemplos/Ejercicitación del libro (Se utiliza como guía de estudio el libro "Programación en C: Metodologías, Algoritmos y estructura de datos", de Luis Joyanes Aguilar y Ignacio Zahonero Martinez). Esta práctica se encuentra dentro de la carpeta "Libro".
+## Ejemplos/Ejercicitación del libro mencionado. Esta práctica se encuentra dentro de la carpeta "Libro".
 
 - Capitulo 1:
   - Ejemplo 1.2: Definir si el número ingresado es, o no, primo. Ver archivo primeNumber.c.
