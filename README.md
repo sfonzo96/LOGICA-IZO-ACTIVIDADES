@@ -21,7 +21,13 @@ Repositorio de actividades para la materia Lógica y Estructura de Datos. Materi
   conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al
   momento de la cotización.
 
-## Installation
+## Ejemplos/Ejercicitación del libro (Se utiliza como guía de estudio el libro "Programación en C: Metodologías, Algoritmos y estructura de datos", de Luis Joyanes Aguilar y Ignacio Zahonero Martinez). Esta práctica se encuentra dentro de la carpeta "Libro".
+
+- Capitulo 1:
+  - Ejemplo 1.2: Definir si el número ingresado es, o no, primo. Ver archivo primeNumber.c.
+  - Ejemplo 1.3: Calcular la suma entre todos los números pares entre 2 y 1000. Ver archivo evenSum.c
+
+## Instalación
 
 Para probar el código es necesario contar con un IDE compatible con C/C++ y un compilador de tales lenguajes.
 En este caso se utiliza Dev C++. Descarga disponible en [aquí](https://www.bloodshed.net/).
