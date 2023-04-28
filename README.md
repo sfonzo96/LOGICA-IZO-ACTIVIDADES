@@ -12,7 +12,7 @@ Repositorio de actividades para la materia Lógica y Estructura de Datos. Materi
 
   Esta carpeta incluye aquellas practicas adicionales tomadas del libro que resulten oportunas para complementar el material de clases.
 
-##Actividades
+## Actividades
 
 ### Actividad 1
 
@@ -31,8 +31,8 @@ Repositorio de actividades para la materia Lógica y Estructura de Datos. Materi
 ## Ejercicitación del libro
 
 ### Capitulo 1:
-    - Ejemplo 1.2 (pág. 16): Definir si un número es, o no, primo. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/primeNumber.c).
-    - Ejemplo 1.3 (pág. 17): Calcular la suma de todos los números pares entre 2 y 1000. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/evenSum.c).
+  - Ejemplo 1.2 (pág. 16): Definir si un número es, o no, primo. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/primeNumber.c).
+  - Ejemplo 1.3 (pág. 17): Calcular la suma de todos los números pares entre 2 y 1000. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/evenSum.c).
 
 ## Instalación
 
