@@ -12,27 +12,27 @@ Repositorio de actividades para la materia Lógica y Estructura de Datos. Materi
 
   Esta carpeta incluye aquellas practicas adicionales tomadas del libro que resulten oportunas para complementar el material de clases.
 
-## Actividades
+##Actividades
 
-# Actividad 1
+### Actividad 1
 
-- Ejercicio 1:
+  - Ejercicio 1:
 
-  Un automóvil realiza su carga de combustible. El propietario conoce su autonomía y ésta no cambia. Por ejemplo 14km/l.
-  Realizar un programa el cual ingresando el precio por litro de combustible y la cantidad que cargo, calcule el IMPORTE a pagar y los KILOMETROS a recorrer con dicha carga.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_1/ejercicio1.c).
+    Un automóvil realiza su carga de combustible. El propietario conoce su autonomía y ésta no cambia. Por ejemplo 14km/l.
+    Realizar un programa el cual ingresando el precio por litro de combustible y la cantidad que cargo, calcule el IMPORTE a pagar y los KILOMETROS a recorrer con dicha carga.
+    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_1/ejercicio1.c).
 
-- Ejercicio 2:
+  - Ejercicio 2:
 
-  Una inmobiliaria realiza cotizaciones sobre un loteo. Se tiene de los mismos los metros de frente y el largo. El precio del metro cuadrado está en dólares u$s50 y no cambia.
-  Realizar un programa el cual ingresando la cotización del dólar, y las medidas conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al momento de la cotización.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_1/ejercicio2.c)
+    Una inmobiliaria realiza cotizaciones sobre un loteo. Se tiene de los mismos los metros de frente y el largo. El precio del metro cuadrado está en dólares u$s50 y no cambia.
+    Realizar un programa el cual ingresando la cotización del dólar, y las medidas conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al momento de la cotización.
+    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_1/ejercicio2.c) 
 
 ## Ejercicitación del libro
 
-- Capitulo 1:
-  - Ejemplo 1.2 (pág. 16): Definir si un número es, o no, primo. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/primeNumber.c).
-  - Ejemplo 1.3 (pág. 17): Calcular la suma de todos los números pares entre 2 y 1000. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/evenSum.c).
+### Capitulo 1:
+    - Ejemplo 1.2 (pág. 16): Definir si un número es, o no, primo. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/primeNumber.c).
+    - Ejemplo 1.3 (pág. 17): Calcular la suma de todos los números pares entre 2 y 1000. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/evenSum.c).
 
 ## Instalación
 
