@@ -2,14 +2,16 @@
 #include <conio.h>	
 
 int main() {
-	float SQUARE_METER_PRICE = 50;
+	const float SQUARE_METER_PRICE = 50;
 	float landWidth = 0, landLength = 0, arsPerUsd = 0, landArea, usdPrice, arsPrice;
 	
+	printf("A continuacion se calcula el area del lote y el importe a pagar en pesos argentinos y en dolares estadounidenses:\n\n");
+	
 	printf("Por favor, ingresa la cotizacion del dolar:\n");
-	if (scanf("%f",&arsPerUsd) != 1) { // scanf devuelve la cantidad de punteros correctamente asignados, si no logra asignarlos devuelve 0.
+	if (scanf("%f",&arsPerUsd) != 1) { // Validates that the input value is asigned correctly (getch returns the number of successfully asigned values)
 		printf("El dato ingresado no es correcto. Debes ingresar un namero.\n");
 		
-		return 1;
+		return 1; // Program ends due to wrong input type 
 	};
 	
 	printf("Ahora, por favor, ingresa el ancho del lote:\n");
@@ -26,6 +28,7 @@ int main() {
 		return 1;
 	};
 	
+	// Calculated values are asigned
 	landArea = landWidth * landLength;
 	usdPrice = landArea * SQUARE_METER_PRICE;
 	arsPrice = usdPrice * arsPerUsd;
@@ -34,5 +37,5 @@ int main() {
 	
 	getch();
 	
-	return 0;
+	return 0; // Program ends with successful execution
 }
