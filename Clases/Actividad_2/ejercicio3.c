@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <locale.h>
 
 // Adds support for math constants
 #define _USE_MATH_DEFINES
@@ -7,32 +8,33 @@
 
 /*
 	Problema: 
-		Dado un valor para el radio de un círculo, se debe devolver el área del mismo. 
+		Dado un valor para el radio de un cï¿½rculo, se debe devolver el ï¿½rea del mismo. 
 	
 	Algoritmo:
 		- Inicio
-		- Se pide a usuario que ingrese el radio del círculo
-		- Se calcula el área del círculo como PI*r^2
-		- Se muestra al usuario el valor del área del círculo
+		- Se pide a usuario que ingrese el radio del cï¿½rculo
+		- Se calcula el ï¿½rea del cï¿½rculo como PI*r^2
+		- Se muestra al usuario el valor del ï¿½rea del cï¿½rculo
 		- Fin
 */
 
 int main() {
-	
 	float radius, circleArea;
 	
-	printf("A continuacion se permite calcular el area de un circulo a traves de su radio.\n");
+  setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
+
+	printf("A continuaciÃ³n se permite calcular el Ã¡rea de un cÃ­rculo a travÃ©s de su radio.\n");
 	
-	printf("Por favor ingresa el radio del circulo cuyo area quieras calcular en cm: \n");
+	printf("Por favor, ingresÃ¡ el radio del cÃ­rculo cuyo Ã¡rea quieras calcular en cm: \n");
 	if(scanf("%f", &radius) != 1) {
-		printf("Tenes que ingresar un numero! No una letra ni un simbolo...");
+		printf("TenÃ©s que ingresar un nÃºmero! No una letra ni un sÃ­mbolo...");
 		
 		return 1;
 	}
 	
 	circleArea = M_PI * pow(radius,2);
 	
-	printf("El area del circulo cuyo radio es %.2f cm es: %.2f cm cuadrados.", radius, circleArea);
+	printf("El Ã¡rea del cÃ­rculo cuyo radio es %.2f cm es: %.2f cm cuadrados.", radius, circleArea);
 	
 	getch();
 	

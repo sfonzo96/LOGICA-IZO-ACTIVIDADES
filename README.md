@@ -49,6 +49,50 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   Calcular el área de círculo en función del radio ingresado.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_2/ejercicio3.c)
 
+## Prácticas
+
+### Práctica 1
+
+- Ejercicio 1:
+
+  Ingresar dos valores enteros, sumarlos e imprimir esta suma.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio1.c)
+
+- Ejercicio 2:
+
+  Ingresar tres valores, sumarlos e imprimir esta suma.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio2.c)
+
+- Ejercicio 3:
+
+  Ingresar los lados de un triángulo calcular su perímetro e imprimirlo.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio3.c)
+
+  - Ejercicio 4:
+
+  Solicitar ingresar dos lados de un triángulo rectángulo y calcular, la hipotenusa, el perímetro, la superficie (área). Imprima los resultados de las operaciones solicitadas.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio4.c)
+
+- Ejercicio 5:
+
+  El usuario debe poder ingresar los lados de un rectángulo y el programa calcula con esos datos la diagonal principal del rectángulo, superficie y perímetro. Mostrar al usuario los resultado.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio5.c)
+
+- Ejercicio 6:
+
+  Ingresar dos valores, calcular su suma, su producto y la resta del 1ro menos el 2do valor ingresado, imprimir los resultados.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio6.c)
+
+  - Ejercicio 7:
+
+  Ingresar el valor de la hora y el tiempo trabajado por un comerciante, calcular su sueldo e imprimirlo.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio7.c)
+
+- Ejercicio 8:
+
+  Ingresar el tiempo trabajado por un contador y considerando que el valor de la hora es de 800 pesos, calcular su sueldo e imprimirlo
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio8.c)
+
 ## Ejercicitación del libro
 
 ### Capitulo 1:

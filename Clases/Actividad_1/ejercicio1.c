@@ -1,23 +1,25 @@
 #include <stdio.h>
 #include <conio.h>
+#include <locale.h>
 
 // APB :)
 
 void clear() { // Declares a function that cleans the input buffer
 	char c;
-	while ((c = getchar()) != '\n' && c != EOF); // Reads and discards every char that's left in the input buffer as long as it is not a new line or the EOF
-	printf("cleaning buffer...\n"); // Debug purpose only
+	while (getchar() != '\n'); // Reads and discards every char that's left in the input buffer as long as it is not a new line char
 }
 	
 int main() {
 	const float AUTONOMY = 14;
 	float fuelLiterPrice, loadedLiters, totalCost, maxDistance;
+
+  setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuaci�n se calculan el importe a pagar por la carga de combustible y los kilometros que dicha carga permite recorrer: \n\n");
+	printf("A continuación se calculan el importe a pagar por la carga de combustible y los kilómetros que dicha carga permite recorrer en un automóvil: \n\n");
 	
 	printf("Por favor, ingrese el precio (en pesos argentinos) por litro de combustible:\n");
 	if (scanf("%f",&fuelLiterPrice) != 1) {// Validates the input type (getch returns the number of successfully asigned values, so 1 for a correctly asigned value)
-		printf("El dato ingresado no es correcto. Debes ingresar un numero.\n");
+		printf("El dato ingresado no es correcto. Debes ingresar un número.\n");
 		
 		return 1; // Program ends due to wrong input type 
 	};
@@ -27,7 +29,7 @@ int main() {
 	
 	printf("Ahora, por favor, ingrese la cantidad de combustible cargada:\n");
 	if (scanf("%f",&loadedLiters) != 1) {
-		printf("El dato ingresado no es correcto. Debes ingresar un numero.\n");
+		printf("El dato ingresado no es correcto. Debes ingresar un número.\n");
 		
 		return 1;
 	};
@@ -36,9 +38,9 @@ int main() {
 	totalCost = fuelLiterPrice * loadedLiters;
 	maxDistance = AUTONOMY * loadedLiters;
 	
-	printf("Dado que la autonomia del automovil es de %.2f km/L y que se cargaron %.2f litros de combustible:\n", AUTONOMY, loadedLiters);
+	printf("Dado que la autonomía del automóvil es de %.2f km/L y que se cargaron %.2f litros de combustible:\n", AUTONOMY, loadedLiters);
 	printf("El costo total fue de $ %.2f.\n", totalCost);
-	printf("La distancia maxima a recorrer con la carga sera de %.2f kilometros.\n", maxDistance);
+	printf("La distancia máxima a recorrer con la carga será de %.2f kilómetros.\n", maxDistance);
 	
 	getch();
 	
