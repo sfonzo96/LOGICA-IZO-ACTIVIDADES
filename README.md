@@ -18,7 +18,7 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
 
 ## Actividades
 
-### Actividad 1
+### Actividad 21-04-2023
 
 - Ejercicio 1:
 
@@ -32,7 +32,7 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   Realizar un programa el cual ingresando la cotización del dólar, y las medidas conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al momento de la cotización.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_1/ejercicio2.c)
 
-### Actividad 2
+### Actividad 05-05-2023
 
 - Ejercicio 1:
 
@@ -49,9 +49,7 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   Calcular el área de círculo en función del radio ingresado.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_2/ejercicio3.c)
 
-## Prácticas
-
-### Práctica 1
+### Actividad práctica adicional 05-05-2023
 
 - Ejercicio 1:
 
@@ -68,7 +66,7 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   Ingresar los lados de un triángulo calcular su perímetro e imprimirlo.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio3.c)
 
-  - Ejercicio 4:
+- Ejercicio 4:
 
   Solicitar ingresar dos lados de un triángulo rectángulo y calcular, la hipotenusa, el perímetro, la superficie (área). Imprima los resultados de las operaciones solicitadas.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio4.c)
@@ -83,7 +81,7 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   Ingresar dos valores, calcular su suma, su producto y la resta del 1ro menos el 2do valor ingresado, imprimir los resultados.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio6.c)
 
-  - Ejercicio 7:
+- Ejercicio 7:
 
   Ingresar el valor de la hora y el tiempo trabajado por un comerciante, calcular su sueldo e imprimirlo.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Practicas/Practica_1/ejercicio7.c)
