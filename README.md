@@ -1,6 +1,10 @@
 # Lógica y estructura de datos - IZO (2023)
 
 Repositorio de actividades para la materia Lógica y Estructura de Datos. Materia de 1° año de la carrera Tecnicatura en Desarrollo de Software dictada en el Instituto Superior Zona Oeste (ISPI 9045). Se utiliza como guía de estudio el libro "Programación en C: Metodologías, Algoritmos y estructura de datos", de Luis Joyanes Aguilar y Ignacio Zahonero Martinez.
+Además de la bibliografía sugerida, se utilizan como material complementario los siguientes recursos:
+
+- [C Programming Full Course for free 🕹️](https://www.youtube.com/watch?v=87SH2Cn0s9A) by Bro Code.
+- [C Programming for everybody](https://www.youtube.com/watch?v=XteaWkvontg&list=PLlRFEj9H3Oj5NbaFb1b2n8lib01uNPWLa) by Dr. Chuck Severance.
 
 ## Índice
 
@@ -27,6 +31,23 @@ Repositorio de actividades para la materia Lógica y Estructura de Datos. Materi
   Una inmobiliaria realiza cotizaciones sobre un loteo. Se tiene de los mismos los metros de frente y el largo. El precio del metro cuadrado está en dólares u$s50 y no cambia.
   Realizar un programa el cual ingresando la cotización del dólar, y las medidas conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al momento de la cotización.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_1/ejercicio2.c)
+
+# Actividad 2
+
+- Ejercicio 1:
+
+  Ingresando un número entero, mostrar anterior y posterior.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_2/ejercicio1.c)
+
+- Ejercicio 2:
+
+  Ingresando dos despósitos, mostrar la suma de ambos más un interés del 20%.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_2/ejercicio2.c)
+
+- Ejercicio 3:
+
+  Calcular el área de círculo en función del radio ingresado.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/Actividad_2/ejercicio3.c)
 
 ## Ejercicitación del libro
 
