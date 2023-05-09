@@ -15,7 +15,6 @@
 */
 
 void clearInputBuffer() {
-	char c;
 	while (getchar() != '\n');
 }
 

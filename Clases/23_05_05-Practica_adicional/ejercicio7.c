@@ -16,7 +16,6 @@
 */
 
 void clearInputBuffer() {
-	char c;
 	while (getchar() != '\n');
 }
 
@@ -25,11 +24,11 @@ int main() {
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuación se permite calcular el sueldo de un comerciante con base en valor de la hora y en la cantidad de horas trabajadas.\n");
+	printf("A continuaciï¿½n se permite calcular el sueldo de un comerciante con base en valor de la hora y en la cantidad de horas trabajadas.\n");
 	
 	printf("Por favor ingresa el valor de la hora de trabajo en pesos:\n");
 	if (scanf("%f", &hourlyPayment) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número entero...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero entero...");
 		return 1;
 	}
 	
@@ -37,13 +36,13 @@ int main() {
 	
 	printf("Por favor ingresa la cantidad de horas trabajadas en el mes:\n");
 	if (scanf("%f", &workedHours) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número entero...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero entero...");
 		return 1;
 	}
 	
 	monthlyPayment = hourlyPayment * workedHours;
 	
-	printf("Habiendo trabajado %.1f horas, a razón de $ %.2f por hora, el sueldo correspondiente del mes es: %.2f.", workedHours, hourlyPayment, monthlyPayment);
+	printf("Habiendo trabajado %.1f horas, a razï¿½n de $ %.2f por hora, el sueldo correspondiente del mes es: %.2f.", workedHours, hourlyPayment, monthlyPayment);
 	
 	getch();
 	

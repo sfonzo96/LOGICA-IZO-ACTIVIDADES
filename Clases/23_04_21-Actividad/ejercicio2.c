@@ -5,7 +5,6 @@
 // APB :)
 
 void clear() { // Declares a function that cleans the input buffer
-	char c;
 	while (getchar() != '\n'); // Reads and discards every char that's left in the input buffer as long as it is not a new line or the EOF
 }
 

@@ -7,15 +7,14 @@
 	
 	Algoritmo: 
 		- Inicio
-		- Pedir al usuario ingresar la cantidad de numeros que quiere sumar // Modificación para que la permita sumar cualquier cantidad de números
+		- Pedir al usuario ingresar la cantidad de numeros que quiere sumar // Modificaciï¿½n para que la permita sumar cualquier cantidad de nï¿½meros
 		- Pedir n veces al usuario que ingrese un numero, siendo n la cantidad que el usuario elige en el paso anterior
-		- Sumar los números ingresados en la medida que el usuario los ingresa
+		- Sumar los nï¿½meros ingresados en la medida que el usuario los ingresa
 		- Mostrar el resultado de la suma al usuario
 		- Fin
 */
 
 void clearInputBuffer() {
-	char c;
 	while (getchar() != '\n');
 }
 
@@ -25,13 +24,13 @@ int main( ) {
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuación se permite obtener la suma de n números ingresados.\n");
+	printf("A continuaciï¿½n se permite obtener la suma de n nï¿½meros ingresados.\n");
 	
-	printf("Por favor, ingresá la cantidad de numeros que quieras sumar:\n");
+	printf("Por favor, ingresï¿½ la cantidad de numeros que quieras sumar:\n");
 	
 	// Sets the amount of numbers to be added
 	if (scanf("%f", &amountOfNumbers) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero...");
 		return 1;
 	}
 	
@@ -41,10 +40,10 @@ int main( ) {
 	for (i = 0; i < amountOfNumbers; i++) {
 		float userNumber;
 		
-		printf("Por favor, ingresá el %d° número:\n", i + 1);
+		printf("Por favor, ingresï¿½ el %dï¿½ nï¿½mero:\n", i + 1);
 		
 		if (scanf("%f", &userNumber) != 1) {
-			printf("Ingresaste un símbolo o una letra! Debes ingresar un número...");
+			printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero...");
 			return 1;
 		}
 		
@@ -53,7 +52,7 @@ int main( ) {
 		clearInputBuffer();
 	}
 	
-	printf("La suma de los números ingresados es: %.0f.", sum);
+	printf("La suma de los nï¿½meros ingresados es: %.0f.", sum);
 	
 	getch();
 	

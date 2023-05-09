@@ -3,20 +3,19 @@
 #include <locale.h>
 
 /*
-	Problema: Ingresar los lados de un triángulo calcular su perímetro e imprimirlo.
+	Problema: Ingresar los lados de un triï¿½ngulo calcular su perï¿½metro e imprimirlo.
 	
 	Algoritmo: 
 		- Inicio
-		- Pedir al usuario que ingrese el valor del primer lado de un triángulo
-		- Pedir al usuario que ingrese el valor del segundo lado de un triángulo
-		- Pedir al usuario que ingrese el valor del tercer lado de un triángulo
-		- Calcular el perímetro como la suma de los tres lados
+		- Pedir al usuario que ingrese el valor del primer lado de un triï¿½ngulo
+		- Pedir al usuario que ingrese el valor del segundo lado de un triï¿½ngulo
+		- Pedir al usuario que ingrese el valor del tercer lado de un triï¿½ngulo
+		- Calcular el perï¿½metro como la suma de los tres lados
 		- Mostrar el resultado al usuario
 		- Fin
 */
 
 void clearInputBuffer() {
-	char c;
 	while (getchar() != '\n');
 }
 
@@ -26,15 +25,15 @@ int main() {
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuación se permite calcular el perímetro de un triángulo al ingresar la medida de sus lados.");
+	printf("A continuaciï¿½n se permite calcular el perï¿½metro de un triï¿½ngulo al ingresar la medida de sus lados.");
 	
 	for (i = 0; i < 3; i++) {
 		float triangleSide;
 		
-		printf("Por favor, ingresá la longitud del %d° lado del triángulo en cm:\n", i + 1);
+		printf("Por favor, ingresï¿½ la longitud del %dï¿½ lado del triï¿½ngulo en cm:\n", i + 1);
 		
 		if (scanf("%f", &triangleSide) != 1) {
-			printf("Ingresaste un símbolo o una letra! Debes ingresar un número...");
+			printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero...");
 			return 1;
 		}
 		
@@ -43,7 +42,7 @@ int main() {
 		clearInputBuffer();
 	}
 	
-	printf("El perímetro del triángulo es de: %.2f cm", perimeter);
+	printf("El perï¿½metro del triï¿½ngulo es de: %.2f cm", perimeter);
 	
 	getch();
 	

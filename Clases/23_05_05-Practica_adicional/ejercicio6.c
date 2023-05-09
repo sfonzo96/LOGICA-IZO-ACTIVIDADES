@@ -17,7 +17,6 @@
 */
 
 void clearInputBuffer() {
-	char c;
 	while (getchar() != '\n');
 }
 
@@ -26,21 +25,21 @@ int main() {
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuación se permite obtener la suma, el producto y la diferencia entre dos números ingresados.\n");
+	printf("A continuaciï¿½n se permite obtener la suma, el producto y la diferencia entre dos nï¿½meros ingresados.\n");
 	
-	printf("Por favor, ingresá el primer número:\n");
+	printf("Por favor, ingresï¿½ el primer nï¿½mero:\n");
 	
 	if (scanf("%f", &firstNumber) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número entero...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero entero...");
 		return 1;
 	}
 	
 	clearInputBuffer();
 	
-	printf("Por favor, ingresá el segundo número:\n");
+	printf("Por favor, ingresï¿½ el segundo nï¿½mero:\n");
 	
 	if (scanf("%f", &secondNumber) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número entero...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero entero...");
 		return 1;
 	}
 	
@@ -48,7 +47,7 @@ int main() {
 	product = firstNumber * secondNumber;
 	subtraction = firstNumber - secondNumber;
 	
-	printf("Los números ingresados fueron: %.2f y %.2f.\nLa suma de ambos es %.2f, su producto es %.2f y su resta es %.2f", firstNumber, secondNumber, sum, product, subtraction);
+	printf("Los nï¿½meros ingresados fueron: %.2f y %.2f.\nLa suma de ambos es %.2f, su producto es %.2f y su resta es %.2f", firstNumber, secondNumber, sum, product, subtraction);
 	
 	getch();
 	

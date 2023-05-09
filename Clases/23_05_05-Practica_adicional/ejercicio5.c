@@ -4,21 +4,20 @@
 #include <math.h>
 
 /*
-	Problema: El usuario debe poder ingresar los lados de un rectángulo y el programa calcula con esos datos la diagonal principal del rectángulo, superficie y perímetro. Mostrar al usuario los resultado.
+	Problema: El usuario debe poder ingresar los lados de un rectï¿½ngulo y el programa calcula con esos datos la diagonal principal del rectï¿½ngulo, superficie y perï¿½metro. Mostrar al usuario los resultado.
 	
 	Algoritmo: 
 		- Inicio
-		- Pedir al usuario que ingrese el valor del primer lado de un reactángulo
-		- Pedir al usuario que ingrese el valor del segundo lado de un reactángulo
-		- Calcular la diagonal del reactángulo con teorema de Pitágoras (diagonal = hipotenusa del triángulo rectangulo que se forma con los lados)
-		- Calcular el perímetro del rectángulo como la suma del doble de ambos lados
-		- Calcular el área del reactángulo como el producto de los lados ingresados
+		- Pedir al usuario que ingrese el valor del primer lado de un reactï¿½ngulo
+		- Pedir al usuario que ingrese el valor del segundo lado de un reactï¿½ngulo
+		- Calcular la diagonal del reactï¿½ngulo con teorema de Pitï¿½goras (diagonal = hipotenusa del triï¿½ngulo rectangulo que se forma con los lados)
+		- Calcular el perï¿½metro del rectï¿½ngulo como la suma del doble de ambos lados
+		- Calcular el ï¿½rea del reactï¿½ngulo como el producto de los lados ingresados
 		- Mostrar los resultados al usuario
 		- Fin
 */
 
 void clearInputBuffer() {
-	char c;
 	while (getchar() != '\n');
 }
 
@@ -27,21 +26,21 @@ int main() {
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuación se permite calcular la diagonal, el perímetro y la superficie de un reactángulo al ingresar la medida de sus lados.\n");
+	printf("A continuaciï¿½n se permite calcular la diagonal, el perï¿½metro y la superficie de un reactï¿½ngulo al ingresar la medida de sus lados.\n");
 	
-	printf("Por favor, ingresá la longitud del primer lado:\n");
+	printf("Por favor, ingresï¿½ la longitud del primer lado:\n");
 	
 	if (scanf("%f", &base) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número entero...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero entero...");
 		return 1;
 	}
 	
 	clearInputBuffer();
 	
-	printf("Por favor, ingresá la longitud del segundo lado:\n");
+	printf("Por favor, ingresï¿½ la longitud del segundo lado:\n");
 	
 	if (scanf("%f", &height) != 1) {
-		printf("Ingresaste un símbolo o una letra! Debes ingresar un número entero...");
+		printf("Ingresaste un sï¿½mbolo o una letra! Debes ingresar un nï¿½mero entero...");
 		return 1;
 	}
 	
@@ -49,7 +48,7 @@ int main() {
 	perimeter = base * 2 + height * 2;
 	area = base * height;
 	
-	printf("Para el rectángulo de cuyos lados son %.2f cm y %.2f cm, se tiene que:\nSu diagonal es de %.2f cm, su perímetro es de %.2f cm y su superficie es de %.2f cm2.", base, height, diagonal, perimeter, area);
+	printf("Para el rectï¿½ngulo de cuyos lados son %.2f cm y %.2f cm, se tiene que:\nSu diagonal es de %.2f cm, su perï¿½metro es de %.2f cm y su superficie es de %.2f cm2.", base, height, diagonal, perimeter, area);
 	
 	return 0;
 }
