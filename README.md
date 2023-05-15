@@ -91,7 +91,7 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   Ingresar el tiempo trabajado por un contador y considerando que el valor de la hora es de 800 pesos, calcular su sueldo e imprimirlo.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio8.c).
 
-### Actividad 05-05-2023
+### Actividad 12-05-2023
 
 - Ejercicio 1:
 
