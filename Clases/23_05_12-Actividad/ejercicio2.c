@@ -17,7 +17,7 @@
 		- Fin
 */
 
-void clearInputBuffer() {
+void clearInputBuffer() { // Clears the input buffer in order to avoid unexpected behaviour
 	while (getchar() != '\n');
 }
 
@@ -26,7 +26,7 @@ int main( ) {
 
 	int chosenOption;
 	float firstNumber, secondNumber, maxNumber;
-	char students[6][25] = {"Fonzo Santiago, 1er año", "Gauto Santiago, 1er año", "Gomez Alejandro, 1er año", "Montero Yael, 1er año", "John Doe, 2do año", "Jane Doe, 3er año"};
+	char students[6][25] = {"Fonzo Santiago, 1er año", "Gauto Santiago, 1er año", "Gomez Alejandro, 1er año", "Montero Yael, 1er año", "John Doe, 2do año", "Jane Doe, 3er año"}; // Defines a 2D matrix array that stores students data (6 students and a max length of 25 char for their data) 
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
@@ -60,8 +60,9 @@ int main( ) {
 				printf("Es necesario que introduzcas un número!");
 				return 1;
 			}
+			clearInputBuffer();
 			
-			maxNumber = firstNumber > secondNumber ? firstNumber : secondNumber; 		
+			maxNumber = firstNumber > secondNumber ? firstNumber : secondNumber; // Sets the max number	
 			
 			printf("Se ignresaron los números %.1f y %.1f. El mayor de ellos es: %.1f.", firstNumber, secondNumber, maxNumber);
 			
@@ -71,7 +72,7 @@ int main( ) {
 			printf("Saliendo del programa...");
 			break;
 		
-		default:
+		default: // If the input value doesn't match values 1, 2 or 3 => the below message will be printed indicating a wrong input
 			printf("La opción que seleccionaste no es válida, por favor tené en cuenta que solo se pueden ingresar los valores '1', '2', y '3'.");
 			return 1;
 	}

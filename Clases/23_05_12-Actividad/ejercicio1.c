@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <locale.h>
-#include <stdbool.h>
+#include <stdbool.h> // Allows the use of boolean type values
 
 /*
 	Problema: Ingresar tres notas, mostrar el promedio de las mismas y si el alumno aprobó o debe recuperar.
@@ -17,15 +17,15 @@
 		- Fin
 */
 
-void clearInputBuffer() {
+void clearInputBuffer() { // Clears the input buffer in order to avoid unexpected behaviour
 	while (getchar() != '\n');
 }
 
 int main( ) {	
 	float firstGrade, secondGrade, thirdGrade;
-  int numberOfGrades = 3;
-  float gradePointAverage;
-  bool studentAproves = false;
+	int numberOfGrades = 3;
+	float gradePointAverage;
+	bool studentAproves = false; // Indicates the student condition, true is for aproved and false the opposite
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
@@ -33,7 +33,7 @@ int main( ) {
 	
 	printf("Por favor, ingresá la primera nota:\n");
 	
-	if (scanf("%f", &firstGrade) != 1 || firstGrade < 0 || firstGrade > 10) {
+	if (scanf("%f", &firstGrade) != 1 || firstGrade < 0 || firstGrade > 10) { // Grade should be a number between 1 and 10 (extremes included)
 		printf("Solo podés ingresar números y la nota necesita ser un valor entre 1 y 10!");
 		return 1;
 	}
