@@ -30,66 +30,83 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
 
   Una inmobiliaria realiza cotizaciones sobre un loteo. Se tiene de los mismos los metros de frente y el largo. El precio del metro cuadrado está en dólares u$s50 y no cambia.
   Realizar un programa el cual ingresando la cotización del dólar, y las medidas conocidas del lote, calcule el área del mismo y el importe en dólares y en pesos al momento de la cotización.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_04_21-Actividad/ejercicio2.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_04_21-Actividad/ejercicio2.c).
 
 ### Actividad 05-05-2023
 
 - Ejercicio 1:
 
   Ingresando un número entero, mostrar anterior y posterior.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Actividad/ejercicio1.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Actividad/ejercicio1.c).
 
 - Ejercicio 2:
 
   Ingresando dos despósitos, mostrar la suma de ambos más un interés del 20%.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Actividad/ejercicio2.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Actividad/ejercicio2.c).
 
 - Ejercicio 3:
 
   Calcular el área de círculo en función del radio ingresado.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Actividad/ejercicio3.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Actividad/ejercicio3.c).
 
 ### Actividad práctica adicional 05-05-2023
 
 - Ejercicio 1:
 
   Ingresar dos valores enteros, sumarlos e imprimir esta suma.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio1.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio1.c).
 
 - Ejercicio 2:
 
   Ingresar tres valores, sumarlos e imprimir esta suma.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio2.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio2.c).
 
 - Ejercicio 3:
 
   Ingresar los lados de un triángulo calcular su perímetro e imprimirlo.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio3.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio3.c).
 
 - Ejercicio 4:
 
   Solicitar ingresar dos lados de un triángulo rectángulo y calcular, la hipotenusa, el perímetro, la superficie (área). Imprima los resultados de las operaciones solicitadas.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio4.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio4.c).
 
 - Ejercicio 5:
 
   El usuario debe poder ingresar los lados de un rectángulo y el programa calcula con esos datos la diagonal principal del rectángulo, superficie y perímetro. Mostrar al usuario los resultado.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio5.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio5.c).
 
 - Ejercicio 6:
 
   Ingresar dos valores, calcular su suma, su producto y la resta del 1ro menos el 2do valor ingresado, imprimir los resultados.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio6.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio6.c).
 
 - Ejercicio 7:
 
   Ingresar el valor de la hora y el tiempo trabajado por un comerciante, calcular su sueldo e imprimirlo.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio7.c)
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio7.c).
 
 - Ejercicio 8:
 
-  Ingresar el tiempo trabajado por un contador y considerando que el valor de la hora es de 800 pesos, calcular su sueldo e imprimirlo
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio8.c)
+  Ingresar el tiempo trabajado por un contador y considerando que el valor de la hora es de 800 pesos, calcular su sueldo e imprimirlo.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional/ejercicio8.c).
+
+### Actividad 05-05-2023
+
+- Ejercicio 1:
+
+  Ingresar tres notas, mostrar el promedio de las mismas y si el alumno aprobó o debe recuperar.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_12-Actividad/ejercicio1.c).
+
+- Ejercicio 2:
+
+  Mostrar un menú de tres opciones al usuario:
+
+  - La primera debe mostrar datos de alumnos del IZO al usuario.
+  - La segunda debe pedir dos números y mostrar el mayor de ellos.
+  - La tercera debe finalizar el programa.
+
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_12-Actividad/ejercicio2.c).
 
 ## Ejercicitación del libro
 

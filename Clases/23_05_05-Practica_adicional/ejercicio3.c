@@ -3,14 +3,14 @@
 #include <locale.h>
 
 /*
-	Problema: Ingresar los lados de un tri�ngulo calcular su per�metro e imprimirlo.
+	Problema: Ingresar los lados de un triángulo calcular su perímetro e imprimirlo.
 	
 	Algoritmo: 
 		- Inicio
-		- Pedir al usuario que ingrese el valor del primer lado de un tri�ngulo
-		- Pedir al usuario que ingrese el valor del segundo lado de un tri�ngulo
-		- Pedir al usuario que ingrese el valor del tercer lado de un tri�ngulo
-		- Calcular el per�metro como la suma de los tres lados
+		- Pedir al usuario que ingrese el valor del primer lado de un triángulo
+		- Pedir al usuario que ingrese el valor del segundo lado de un triángulo
+		- Pedir al usuario que ingrese el valor del tercer lado de un triángulo
+		- Calcular el perímetro como la suma de los tres lados
 		- Mostrar el resultado al usuario
 		- Fin
 */
@@ -25,15 +25,15 @@ int main() {
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuaci�n se permite calcular el per�metro de un tri�ngulo al ingresar la medida de sus lados.");
+	printf("A continuación se permite calcular el perímetro de un triángulo al ingresar la medida de sus lados.");
 	
 	for (i = 0; i < 3; i++) {
 		float triangleSide;
 		
-		printf("Por favor, ingres� la longitud del %d� lado del tri�ngulo en cm:\n", i + 1);
+		printf("Por favor, ingresá la longitud del %d° lado del triángulo en cm:\n", i + 1);
 		
 		if (scanf("%f", &triangleSide) != 1) {
-			printf("Ingresaste un s�mbolo o una letra! Debes ingresar un n�mero...");
+			printf("Ingresaste un símbolo o una letra! Debes ingresar un número...");
 			return 1;
 		}
 		
@@ -42,7 +42,7 @@ int main() {
 		clearInputBuffer();
 	}
 	
-	printf("El per�metro del tri�ngulo es de: %.2f cm", perimeter);
+	printf("El perímetro del triángulo es de: %.2f cm", perimeter);
 	
 	getch();
 	

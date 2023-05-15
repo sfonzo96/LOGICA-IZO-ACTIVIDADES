@@ -8,8 +8,8 @@
 	
 	Algoritmo:
 		- Inicio
-		- Se pide al usuario que ingrese un n�mero
-		- El usuario debe ingresar un n�mero y este debe almacenarse en una variable
+		- Se pide al usuario que ingrese un n?mero
+		- El usuario debe ingresar un n?mero y este debe almacenarse en una variable
  		- Se muestra al usuario el valor ingresado, su posterior (ingresado + 1) y su anterior (ingresado - 1)
 		- Fin		 
 */

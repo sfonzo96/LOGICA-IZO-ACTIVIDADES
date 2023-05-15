@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <stdio.h>
 #include <conio.h>
 #include <locale.h>
 
 /*
 	Problema: 
-		El usuario debe ingresar un importe de dep�sito, luego otro. Posteriormente debe ver la suma de ambos y luego ver esa suma con un 20% de inter�s aplicado. 
+		El usuario debe ingresar un importe de depósito, luego otro. Posteriormente debe ver la suma de ambos y luego ver esa suma con un 20% de interés aplicado. 
 	
 	Algoritmo:
 		- Inicio
-		- Se pide a usuario que ingrese el primer dep�sito
-		- Se pide a usuario que ingrese el segundo dep�sito
-		- Se suman ambos dep�sitos
-		- Se calcula el importe con el inter�s adicionado
+		- Se pide a usuario que ingrese el primer depósito
+		- Se pide a usuario que ingrese el segundo depósito
+		- Se suman ambos depósitos
+		- Se calcula el importe con el interés adicionado
 		- Se muestra al usuario
 		- Fin
 */

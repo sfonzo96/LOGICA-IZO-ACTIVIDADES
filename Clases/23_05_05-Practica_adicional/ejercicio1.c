@@ -7,9 +7,9 @@
 	
 	Algoritmo: 
 		- Inicio
-		- Pedir al usuario que ingrese un n�mero
-		- Pedir al usuario que ingrese un segundo n�mero
-		- Sumar los n�meros ingresados
+		- Pedir al usuario que ingrese un número
+		- Pedir al usuario que ingrese un segundo número
+		- Sumar los números ingresados
 		- Mostrar el resultado al usuario
 		- Fin
 */

@@ -8,13 +8,13 @@
 
 /*
 	Problema: 
-		Dado un valor para el radio de un c�rculo, se debe devolver el �rea del mismo. 
+		Dado un valor para el radio de un círculo, se debe devolver el área del mismo. 
 	
 	Algoritmo:
 		- Inicio
-		- Se pide a usuario que ingrese el radio del c�rculo
-		- Se calcula el �rea del c�rculo como PI*r^2
-		- Se muestra al usuario el valor del �rea del c�rculo
+		- Se pide a usuario que ingrese el radio del círculo
+		- Se calcula el área del c?rculo como PI*r^2
+		- Se muestra al usuario el valor del área del círculo
 		- Fin
 */
 

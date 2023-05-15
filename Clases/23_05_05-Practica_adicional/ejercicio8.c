@@ -3,13 +3,14 @@
 #include <locale.h>
 
 /*
-	Problema: Ingresar el tiempo trabajado por un contador y considerando que el valor de la hora es de 800 pesos, calcular su sueldo e imprimirlo.
+	Problema: Ingresar dos valores enteros, sumarlos e imprimir esta suma.
 	
 	Algoritmo: 
 		- Inicio
-		- Pedir al usuario que ingrese la cantidad de horas trabajadas.
-		- Calcular el sueldo.
-		- Mostrar el sueldo calculado al usuario
+		- Pedir al usuario que ingrese un n?mero
+		- Pedir al usuario que ingrese un segundo n?mero
+		- Sumar los n?meros ingresados
+		- Mostrar el resultado al usuario
 		- Fin
 */
 
@@ -17,23 +18,32 @@ void clearInputBuffer() {
 	while (getchar() != '\n');
 }
 
-int main() {
-	float workedHours, monthlyPayment;
-	const float HOURLY_PAYMENT = 800.00;
+int main( ) {	
+	int firstNumber, secondNumber, sum;
 	
 	setlocale(LC_CTYPE, "Spanish"); // Adds support for spanish regional config
 	
-	printf("A continuaci�n se permite calcular el sueldo de un contador con base en el valor de la hora y en la cantidad de horas trabajadas.\n");
+	printf("A continuación se permite obtener la suma de dos números ingresados.\n");
 	
-	printf("Por favor ingres� la cantidad de horas trabajadas este mes:\n");
-	if (scanf("%f", &workedHours) != 1) {
-		printf("Ingresaste un s�mbolo o una letra! Debes ingresar un n�mero entero...");
+	printf("Por favor, ingresá el primer número:\n");
+	
+	if (scanf("%d", &firstNumber) != 1) {
+		printf("Ingresaste un símbolo, una letra o un número con cifras decimales! Debes ingresar un número entero...");
 		return 1;
 	}
 	
-	monthlyPayment = workedHours * HOURLY_PAYMENT;
+	clearInputBuffer();
 	
-	printf("Habiendo trabajado %.1f horas, a raz�n de $ %.2f por hora, el sueldo correspondiente del mes es: %.2f.", workedHours, HOURLY_PAYMENT, monthlyPayment);
+	printf("Por favor, ingresá el segundo número:\n");
+	
+	if (scanf("%d", &secondNumber) != 1) {
+		printf("Ingresaste un símbolo, una letra o un número con cifras decimales! Debes ingresar un número entero...");
+		return 1;
+	}
+	
+	sum = firstNumber + secondNumber;
+	
+	printf("Los números ingresados fueron: %d y %d.\nLa suma de ambos es: %d", firstNumber, secondNumber, sum);
 	
 	getch();
 	
