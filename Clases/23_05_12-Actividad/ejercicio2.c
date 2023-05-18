@@ -56,7 +56,13 @@ int main( ) {
 			clearInputBuffer();
 			
 			printf("Por favor, introducí el segundo número:\n\n");
-			if (scanf("%f", &secondNumber) != 1) {
+			if (scanf("%f", &secondNumber) != 1 || firstNumber == secondNumber) {
+				
+				if (firstNumber == secondNumber) {
+					printf("Son el mismo número!");
+					return 1;
+				}
+				
 				printf("Es necesario que introduzcas un número!");
 				return 1;
 			}
