@@ -121,3 +121,7 @@ Para probar el código es necesario contar con un IDE compatible con C/C++ y un 
 En este caso se utiliza Dev C++. Descarga disponible en [aquí](https://www.bloodshed.net/).
 Una vez instalado y abierto el IDE se verá facilmente que permite compilar (F9) y ejecutar (F10), o ambas (F11), también disponibles los botones en la barra de herramientas.
 Al compilarlo, se creará entonces un archivo homónimo al archivo de extensión .c en cuestión que correrá el programa al ejecutarse.
+
+## Licencia
+
+Este repositorio está licenciado bajo la [Licencia MIT](LICENSE).
