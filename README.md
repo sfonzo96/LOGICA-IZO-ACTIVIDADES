@@ -6,17 +6,19 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
 - [C Programming Full Course for free 🕹️](https://www.youtube.com/watch?v=87SH2Cn0s9A) by Bro Code.
 - [C Programming for everybody](https://www.youtube.com/watch?v=XteaWkvontg&list=PLlRFEj9H3Oj5NbaFb1b2n8lib01uNPWLa) by Dr. Chuck Severance.
 
-## Índice
+## Este repositorio
+
+La estructura de este repositorio se compone de dos directorios principales:
 
 - Clases
 
-  Esta carpeta incluye todas las actividades desarrolladas durante clase o aquellas asignadas como tareas.
+  Esta carpeta incluye todas las actividades desarrolladas durante clases o aquellas asignadas como tareas separándolas en directorios que las agrupan según la fecha de la clase.
 
 - Libro
 
   Esta carpeta incluye aquellas practicas adicionales tomadas del libro que resulten oportunas para complementar el material de clases.
 
-## Actividades
+## Actividades de clases
 
 ### Clase 21-04-2023
 
@@ -115,17 +117,17 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
 - Ejercicio 1:
 
   Ingresar un conjunto de números reales positivo. Para finalizar la entrada de datos ingresar un cero. Determinar e informar la cantidad de números ingresados.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/while_ejercicio1.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/while_ejercicio1.c).
 
 - Ejercicio 2:
 
   Dado un conjunto de números naturales, determinar cuántos de ellos son mayores o iguales que 100. Un número igual a cero indica fin de datos.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/while_ejercicio2.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/while_ejercicio2.c).
 
 - Ejercicio 3:
 
   Realizar un proceso que confeccione una factura de compra, ingresando el código de artículo, la cantidad comprada del mismo y su precio unitario. Proponer un fin de datos.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/while_ejercicio3.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/while_ejercicio3.c).
 
 - Ejercicio 4:
 
@@ -135,19 +137,19 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   - Importe promedio de las mismas.
   - Cuántos son los importes que superan los 3000 pesos.
 
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/ejercicio4_while.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/while_ejercicio4.c).
 
 #### Ejercitación DO WHILE
 
 - Ejercicio 1:
 
   Realizar un programa que tome un valor entero y verificar que el mismo se encuentre entre 1 y 10 incluidos.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/do_while_ejercicio1.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/do_while_ejercicio1.c).
 
 - Ejercicio 2:
 
   Se dispone de una planilla con los sueldos a pagar a los empleados de una empresa. Se desea conocer cuál es el sueldo promedio que se debe abonar. Como no se conoce la cantidad de empleados, luego de ingresar cada sueldo deberá aparecer en la pantalla el siguiente cartel: “¿Continua o Finaliza? (C/F)”, el operador entonces deberá ingresar una “C” o una “F”, según quiera continuar ingresando datos o no.
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/do_while_ejercicio2.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/do_while_ejercicio2.c).
 
 - Ejercicio 3:
 
@@ -158,11 +160,35 @@ Además de la bibliografía sugerida, se utilizan como material complementario l
   - Para lo cual se tiene además los siguientes datos del micro: número del mismo y cantidad de asientos que posee el mismo.
   - Exhibir el número del micro, la cantidad de pasajeros y el peso del equipaje.
 
-  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/02_06_12-Actividad/do_while_ejercicio3.c).
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_02-Actividad/do_while_ejercicio3.c).
+
+### Clase 09-06-2023
+
+#### Ejercitación FOR
+
+- Ejercicio 1:
+
+  Mostrar los números del 0 al 5 de menor a mayor, luego de mayor a menor.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_09-Actividad/ejercicio1.c).
+
+- Ejercicio 2:
+
+  Calcular la suma de 10 números reales ingresados por teclado.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_09-Actividad/ejercicio2.c).
+
+- Ejercicio 3:
+
+  Calcular la suma de los N primeros números naturales. El usuario ingresa N.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_09-Actividad/ejercicio3.c).
+
+- Ejercicio 4:
+
+  Ingresar N, donde N es la cantidad de alumnos, y sus respectivas notas de parciales, luego calcular el promedio de notas del curso.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_09-Actividad/ejercicio4.c).
 
 ## Ejercicitación del libro
 
-### Capitulo 1:
+### Capitulo 1
 
 - Ejemplo 1.2 (pág. 16): Definir si un número es, o no, primo. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/primeNumber.c).
 - Ejemplo 1.3 (pág. 17): Calcular la suma de todos los números pares entre 2 y 1000. Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Libro/evenSum.c).
