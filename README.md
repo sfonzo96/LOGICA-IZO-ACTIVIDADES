@@ -186,7 +186,7 @@ La estructura de este repositorio se compone de dos directorios principales:
   Ingresar N, donde N es la cantidad de alumnos, y sus respectivas notas de parciales, luego calcular el promedio de notas del curso.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_09-Actividad/ejercicio4.c).
 
-  ### Clase 09-06-2023
+### Clase 16-06-2023
 
 - Ejercicio 1:
 
@@ -197,6 +197,13 @@ La estructura de este repositorio se compone de dos directorios principales:
 
   Un rapipago ingresa el valor de las facturas cobradas en el día. Su comisión es del 3% de lo recaudado. Mostrar al final de la carga (salir con input 0), el total del dinero en caja, el neto a pagar y la comisión generada.
   Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_16-Actividad/ejercicio2.c).
+
+### Clase 23-06-2023
+
+- Ejercicio 1:
+
+  Generar un tablero tipo ajedrez de tamaño dinámico, es decir, el ususario ingresa la cantidad de filas y columnas deseadas.
+  Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_23-Actividad/ejercicio1.c).
 
 ## Ejercicitación del libro
 
