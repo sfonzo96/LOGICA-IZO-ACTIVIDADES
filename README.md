@@ -214,7 +214,7 @@ La estructura de este repositorio se compone de dos directorios principales:
     -   Preguntar al usuario la cantidad de dolares que quiere comprar
     -   Mostrar el importe total en pantalla
 
-    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/30_06_23-Actividad/ejercicio1.c).
+    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_30-Actividad/ejercicio1.c).
 
 -   Ejercicio 2:
     Crear un programa que:
@@ -223,7 +223,7 @@ La estructura de este repositorio se compone de dos directorios principales:
     -   Muestre al usuario dicho valor y le consulte la cantidad de dolares a adquirir
     -   Guarde el importe total del monto de la venta de dolares en un archivo .txt (records.txt) en forma de lista
 
-    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/30_06_23-Actividad/ejercicio2.c).
+    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_30-Actividad/ejercicio2.c).
 
 ## Ejercicitación del libro
 
