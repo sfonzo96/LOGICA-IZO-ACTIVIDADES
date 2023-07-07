@@ -225,6 +225,20 @@ La estructura de este repositorio se compone de dos directorios principales:
 
     Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_30-Actividad/ejercicio2.c).
 
+### Clase 07-07-2023 (Parcial)
+
+-   Consigna:
+
+    Elaborar programa para cobro de peaje:
+
+    -   Categoria auto = importe 1 (100)
+    -   Categoria camion = importe 2 (200)
+    -   El importe se paga por eje de acuerdo a la categoria del vehiculo.
+    -   Se debe mostrar el total a pagar y guardar en un historial.
+    -   Se deben poder cargar tantos cobros como se quiera hasta que se decida finalizar.
+
+    Ver [archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_07_07-Parcial/parcial.c).
+
 ## Ejercicitación del libro
 
 ### Capitulo 1
