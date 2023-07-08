@@ -19,7 +19,7 @@ void clearInputBuffer() {
 }
 
 int main() {
-	float importeAuto, importeCamion, totalACobrar;
+	float importeAuto, importeCamion, totalACobrar, importeLista, totalPeriodo = 0;;
 	int tipoVehiculo, cantidadEjes, i = 0, opcionMenu;
 	bool cargaEstaTerminada = false;
 	
@@ -101,10 +101,13 @@ int main() {
 	printf("Se ha finalizado la cobranza.\n\n");
 	
 	printf("----COBROS REGISTRADOS AL CORRIENTE----\n");
-	float importe;
-    while(fscanf(historialTxtRead, "%f", &importe) == 1) {
-		printf("$\t%.2f\n", importe);
+
+    while(fscanf(historialTxtRead, "%f", &importeLista) == 1) {
+		printf("$\t%.2f\n", importeLista);
+		totalPeriodo += importeLista;
 	}
+	printf("---------------------TOTAL:\n$\t%.2f", totalPeriodo);
+	
 	
 	fclose(historialTxtRead);
 	fclose(historialTxtAppend);
