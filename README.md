@@ -18,7 +18,7 @@ El directorio principal de este repositorio es la carpeta Clases. Allí se inclu
 
 ### Clase 05-05-2023
 
-[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05-Practica_adicional).
+[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_05_05).
 
 ### Clase 12-05-2023
 
