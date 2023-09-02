@@ -2,7 +2,7 @@
 
 ### Clase 14-07-2023 - Uso de strings
 
--   Consigna:
+-   Ejercicio 1:
 
     Tomar ejercicio del parcial ([archivo parcial](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_07_07-Parcial/parcial.c)) y agregar funciones:
 

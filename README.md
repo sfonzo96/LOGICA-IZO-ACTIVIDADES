@@ -1,10 +1,15 @@
 # Lógica y estructura de datos - IZO (2023)
 
 Repositorio de actividades para la materia Lógica y Estructura de Datos. Materia de 1° año de la carrera Tecnicatura en Desarrollo de Software dictada en el Instituto Superior Zona Oeste (ISPI 9045). Se utiliza como guía de estudio el libro "Programación en C: Metodologías, Algoritmos y estructura de datos", de Luis Joyanes Aguilar y Ignacio Zahonero Martinez.
-Además de la bibliografía sugerida, se utilizan como material complementario los siguientes recursos:
+Además de la bibliografía sugerida, se utilizan como material complementario (búsqueda propia) los siguientes recursos:
 
 -   [C Programming Full Course for free 🕹️](https://www.youtube.com/watch?v=87SH2Cn0s9A) by Bro Code.
 -   [C Programming for everybody](https://www.youtube.com/watch?v=XteaWkvontg&list=PLlRFEj9H3Oj5NbaFb1b2n8lib01uNPWLa) by Dr. Chuck Severance.
+
+Desde el 01-09-23 se comenzó a emplear el lenguaje Visual Basic en lugar de C para la ejercitación.
+Como material complementario (búsqueda propia) se utiliza:
+
+-   [Programming with VB.NET. Beginner's Course](https://www.youtube.com/playlist?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J) by Computer Science.
 
 ## Este repositorio
 
@@ -54,14 +59,24 @@ El directorio principal de este repositorio es la carpeta Clases. Allí se inclu
 
 ### Clase 18-08-2023
 
-[Ver archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_08_18-Actividad).
+[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_08_18-Actividad).
+
+### Clase 01-09-2023
+
+[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_09_01-Actividad).
 
 ## Instalación
+
+### Ejercitación con C
 
 Para probar el código es necesario contar con un IDE compatible con C/C++ y un compilador de tales lenguajes.
 En este caso se utiliza Dev C++. Descarga disponible en [aquí](https://www.bloodshed.net/).
 Una vez instalado y abierto el IDE se verá facilmente que permite compilar (F9) y ejecutar (F10), o ambas (F11), también disponibles los botones en la barra de herramientas.
 Al compilarlo, se creará entonces un archivo homónimo al archivo de extensión .c en cuestión que correrá el programa al ejecutarse.
+
+### Ejercitación con VB.Net
+
+Para poder compilar, ejecutar y probar el código se utilizó Visual Studio Community Edition 2022.
 
 ## Licencia
 

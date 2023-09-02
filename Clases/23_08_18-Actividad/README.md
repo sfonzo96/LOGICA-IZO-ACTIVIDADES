@@ -1,6 +1,6 @@
 # Lógica y estructura de datos - IZO (2023)
 
-### Clase 18-08-2023 - Repaso (vuelta del receso invernal))
+### Clase 18-08-2023 - Repaso (vuelta del receso invernal)
 
 -   Ejercicio 1:
 
