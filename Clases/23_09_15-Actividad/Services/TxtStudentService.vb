@@ -27,7 +27,7 @@ Public Class TxtStudentService
         If File.Exists(filePath) Then
             Dim lines As New List(Of String)(File.ReadAllLines(filePath))
 
-            lines.RemoveAll(Function(line) line.Contains(legajo))
+            lines.RemoveAll(Function(line) line(0) = (legajo))
 
             File.WriteAllLines(filePath, lines)
         End If

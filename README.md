@@ -69,6 +69,10 @@ El directorio principal de este repositorio es la carpeta Clases. Allí se inclu
 
 [Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_09_15-Actividad).
 
+### Clase 22-09-2023
+
+[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_09_22-Actividad).
+
 ## Instalación
 
 ### Ejercitación con C
