@@ -49,7 +49,7 @@ El directorio principal de este repositorio es la carpeta Clases. Allí se inclu
 
 [Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_06_30-Actividad).
 
-### Clase 07-07-2023
+### Clase 07-07-2023 : 1er Examen Parcial (Práctico)
 
 [Ver archivo](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_07_07-Parcial/parcial.c).
 
@@ -72,6 +72,14 @@ El directorio principal de este repositorio es la carpeta Clases. Allí se inclu
 ### Clase 22-09-2023
 
 [Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_09_22-Actividad).
+
+### Clase 29-09-2023
+
+[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_09_29-Actividad).
+
+### Clases 06-10-2023 y 13-10-2023 : 2do Examen Parcial (Práctico)
+
+[Ver archivos](https://github.com/sfonzo96/IZO-Logica-Actividades/blob/main/Clases/23_10_13-Parcial).
 
 ## Software requerido
 

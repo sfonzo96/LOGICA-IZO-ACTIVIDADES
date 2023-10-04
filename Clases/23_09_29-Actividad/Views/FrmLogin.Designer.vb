@@ -82,6 +82,7 @@ Partial Class FrmLogin
         Me.Controls.Add(Me.LblUsername)
         Me.Controls.Add(Me.BtnLogin)
         Me.Name = "FrmLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmLogin"
         Me.ResumeLayout(False)
         Me.PerformLayout()

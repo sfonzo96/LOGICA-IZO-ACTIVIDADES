@@ -53,6 +53,7 @@ Partial Class FrmMain
         Me.Controls.Add(Me.BtnLotes)
         Me.Name = "FrmMain"
         Me.Text = "FrmMain"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
 
     End Sub

@@ -1,6 +1,6 @@
 # Lógica y estructura de datos - IZO (2023)
 
-### Clase 07-07-2023 - Parcial práctico
+### Clase 07-07-2023 - 1er Examen Parcial (Práctico)
 
 -   Consigna:
 

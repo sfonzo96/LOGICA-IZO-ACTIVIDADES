@@ -91,6 +91,7 @@ Partial Class FrmLotes
         Me.Controls.Add(Me.TxtLargo)
         Me.Controls.Add(Me.TxtAncho)
         Me.Name = "FrmLotes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmLotes"
         Me.ResumeLayout(False)
         Me.PerformLayout()

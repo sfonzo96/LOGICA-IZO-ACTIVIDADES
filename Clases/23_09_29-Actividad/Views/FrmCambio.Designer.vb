@@ -34,11 +34,13 @@ Partial Class FrmCambio
         '
         'TxtCotizacion
         '
+        Me.TxtCotizacion.Enabled = False
         Me.TxtCotizacion.Location = New System.Drawing.Point(283, 107)
         Me.TxtCotizacion.Name = "TxtCotizacion"
         Me.TxtCotizacion.ReadOnly = True
         Me.TxtCotizacion.Size = New System.Drawing.Size(100, 20)
         Me.TxtCotizacion.TabIndex = 0
+        Me.TxtCotizacion.TabStop = False
         '
         'LblCotizacion
         '
@@ -115,6 +117,7 @@ Partial Class FrmCambio
         Me.Controls.Add(Me.LblCotizacion)
         Me.Controls.Add(Me.TxtCotizacion)
         Me.Name = "FrmCambio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmCambio"
         Me.ResumeLayout(False)
         Me.PerformLayout()

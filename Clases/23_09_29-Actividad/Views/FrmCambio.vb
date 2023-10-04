@@ -6,11 +6,15 @@
     End Sub
 
     Private Sub BtnCalcularCot_Click(sender As Object, e As EventArgs) Handles BtnCalcularCot.Click
-        Dim cantidadUsd = CDec(TxtCantidadUsd.Text)
-        Dim totalAPagar As Decimal = CDec(TxtCotizacion.Text) * cantidadUsd
-        TxtPago.Text = totalAPagar
+        Try
+            Dim cantidadUsd = CDec(TxtCantidadUsd.Text)
+            Dim totalAPagar As Decimal = CDec(TxtCotizacion.Text) * cantidadUsd
+            TxtPago.Text = totalAPagar
 
-        HistorialTxtService.RegistrarPago(cantidadUsd, totalAPagar)
+            HistorialTxtService.RegistrarPago(cantidadUsd, totalAPagar)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
     End Sub
 
     Private Sub setCotizacion()
@@ -21,4 +25,5 @@
     Private Sub BtnActualizar_Click(sender As Object, e As EventArgs) Handles BtnActualizar.Click
         setCotizacion()
     End Sub
+
 End Class
