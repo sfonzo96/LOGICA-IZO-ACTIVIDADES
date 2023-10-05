@@ -10,8 +10,14 @@
 --);
 
 --CREATE TABLE users(
---	id BIGINT IDENTITY(1,1) PRIMARY KEY,
+--	id BIGINT IDENTITY(1,1) PRIMARY KEY, -- Quitar y convertir username en primary key? O compuesta?
 --	username NVARCHAR(20),
 --	password NVARCHAR(20),
 --	nickname NVARCHAR(20)
 --);
+
+ --INSERT INTO users (username,password,nickname)  
+ --values ('izo','izo2023','Izo'),
+--		('mauricio','mauri123','Mauricio');
+
+-- SELECT * FROM users;

@@ -26,14 +26,17 @@
     End Sub
 
     Private Sub BtnShowRecord_Click(sender As Object, e As EventArgs) Handles BtnShowRecord.Click
-        'Get data from db/txt and show grid
+        Dim frmRecord As New FrmRecord()
+
+        frmRecord.ShowDialog()
+
     End Sub
 
     Private Sub BtnConfirmOperation_Click(sender As Object, e As EventArgs) Handles BtnConfirmOperation.Click
         Try
             'Aplicar FACTORY
-            Dim success As Boolean = DbExchangeService.InsertOperation(usdValue, usdQuantity, arsQuantity)
-
+            Dim success As Boolean = DbExchangeService.AddOperation(usdValue, usdQuantity, arsQuantity)
+            'Dim success As Boolean = FsExchangeService.AddOperation(usdValue, usdQuantity, arsQuantity)
             If Not success Then
                 Throw New Exception("Error al registrar operación")
             Else
