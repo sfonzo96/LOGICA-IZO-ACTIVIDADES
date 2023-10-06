@@ -1,4 +1,6 @@
-﻿Public Class FrmExchange
+﻿Imports System.Data.SqlClient
+
+Public Class FrmExchange
     Private usdValue As Decimal
     Private arsQuantity As Decimal
     Private usdQuantity As Decimal
@@ -29,23 +31,23 @@
         Dim frmRecord As New FrmRecord()
 
         frmRecord.ShowDialog()
-
     End Sub
 
     Private Sub BtnConfirmOperation_Click(sender As Object, e As EventArgs) Handles BtnConfirmOperation.Click
         Try
-            'Aplicar FACTORY
-            Dim success As Boolean = DbExchangeService.AddOperation(usdValue, usdQuantity, arsQuantity)
-            'Dim success As Boolean = FsExchangeService.AddOperation(usdValue, usdQuantity, arsQuantity)
+            Dim dbOperationsService As New DbOperationsService()
+            Dim success As Boolean = dbOperationsService.AddOperation(usdValue, usdQuantity, arsQuantity)
+            'Dim fsOperationsService As New FsOperationsService()
+            'Dim success As Boolean = fsOperationsService.AddOperation(usdValue, usdQuantity, arsQuantity)
             If Not success Then
                 Throw New Exception("Error al registrar operación")
             Else
                 MessageBox.Show("Operación registrada con éxito")
             End If
-
+        Catch sqlEx As SqlException
+            MessageBox.Show("DB error", sqlEx.Message)
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
-
     End Sub
 End Class

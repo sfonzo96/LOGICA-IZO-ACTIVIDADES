@@ -1,9 +1,9 @@
 ﻿Imports System.IO
 
-Public Class FsExchangeService
-    Private Shared ReadOnly FilePath As String = "C:\Deposito\Programación\IZO\MATERIAS\1° AÑO\LÓGICA Y ESTRUCTURA DE DATOS\ACTIVIDADES\Clases\Clases\23_10_13-Parcial\records.txt"
+Public Class FsOperationsService
+    Private ReadOnly FilePath As String = "C:\Deposito\Programación\IZO\MATERIAS\1° AÑO\LÓGICA Y ESTRUCTURA DE DATOS\ACTIVIDADES\Clases\Clases\23_10_13-Parcial\records.txt"
 
-    Public Shared Function AddOperation(usdValue As Decimal, usdQuantity As Decimal, arsQuantity As Decimal) As Boolean
+    Public Function AddOperation(usdValue As Decimal, usdQuantity As Decimal, arsQuantity As Decimal) As Boolean
         If Not File.Exists(FilePath) Then
             Throw New Exception($"No se encontró el archivo en ¨{FilePath}")
         End If
@@ -16,7 +16,7 @@ Public Class FsExchangeService
         Return True
     End Function
 
-    Public Shared Function GetOperations() As List(Of Operation)
+    Public Function GetOperations() As List(Of Operation)
 
         If Not File.Exists(FilePath) Then
             Throw New Exception($"No se encontró el archivo en ¨{FilePath}")
@@ -35,7 +35,7 @@ Public Class FsExchangeService
         Return operations
     End Function
 
-    Public Shared Function MapOperationFromTxtLine(txtLine As String) As Operation
+    Public Function MapOperationFromTxtLine(txtLine As String) As Operation
         Dim operationValues As String() = txtLine.Split(";")
         Dim operation As New Operation(operationValues(0), operationValues(1), operationValues(2), operationValues(3))
         Return operation
