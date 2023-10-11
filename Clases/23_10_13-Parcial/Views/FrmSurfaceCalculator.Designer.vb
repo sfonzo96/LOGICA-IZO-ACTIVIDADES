@@ -34,24 +34,24 @@ Partial Class FrmSurfaceCalculator
         ' LblWidth
         ' 
         LblWidth.AutoSize = True
-        LblWidth.Location = New Point(266, 124)
+        LblWidth.Location = New Point(164, 181)
         LblWidth.Name = "LblWidth"
-        LblWidth.Size = New Size(59, 15)
+        LblWidth.Size = New Size(42, 15)
         LblWidth.TabIndex = 0
-        LblWidth.Text = "Superficie"
+        LblWidth.Text = "Ancho"
         ' 
         ' LblLength
         ' 
         LblLength.AutoSize = True
-        LblLength.Location = New Point(266, 205)
+        LblLength.Location = New Point(164, 239)
         LblLength.Name = "LblLength"
-        LblLength.Size = New Size(59, 15)
+        LblLength.Size = New Size(37, 15)
         LblLength.TabIndex = 1
-        LblLength.Text = "Superficie"
+        LblLength.Text = "Largo"
         ' 
         ' BtnCalculateSurface
         ' 
-        BtnCalculateSurface.Location = New Point(342, 261)
+        BtnCalculateSurface.Location = New Point(238, 280)
         BtnCalculateSurface.Name = "BtnCalculateSurface"
         BtnCalculateSurface.Size = New Size(116, 27)
         BtnCalculateSurface.TabIndex = 2
@@ -60,14 +60,14 @@ Partial Class FrmSurfaceCalculator
         ' 
         ' TxtWidth
         ' 
-        TxtWidth.Location = New Point(350, 116)
+        TxtWidth.Location = New Point(246, 178)
         TxtWidth.Name = "TxtWidth"
         TxtWidth.Size = New Size(100, 23)
         TxtWidth.TabIndex = 3
         ' 
         ' TxtLength
         ' 
-        TxtLength.Location = New Point(350, 197)
+        TxtLength.Location = New Point(246, 236)
         TxtLength.Name = "TxtLength"
         TxtLength.Size = New Size(100, 23)
         TxtLength.TabIndex = 4
@@ -75,25 +75,29 @@ Partial Class FrmSurfaceCalculator
         ' LblSurface
         ' 
         LblSurface.AutoSize = True
-        LblSurface.Location = New Point(266, 355)
+        LblSurface.Location = New Point(424, 234)
         LblSurface.Name = "LblSurface"
-        LblSurface.Size = New Size(59, 15)
+        LblSurface.Size = New Size(86, 15)
         LblSurface.TabIndex = 5
-        LblSurface.Text = "Superficie"
+        LblSurface.Text = "Superficie total"
         ' 
         ' TxtSurface
         ' 
-        TxtSurface.Location = New Point(350, 347)
+        TxtSurface.Enabled = False
+        TxtSurface.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TxtSurface.Location = New Point(529, 231)
         TxtSurface.Name = "TxtSurface"
         TxtSurface.ReadOnly = True
         TxtSurface.Size = New Size(100, 23)
         TxtSurface.TabIndex = 6
+        TxtSurface.TabStop = False
         ' 
         ' FrmSurfaceCalculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
+        ClientSize = New Size(792, 485)
         Controls.Add(TxtSurface)
         Controls.Add(LblSurface)
         Controls.Add(TxtLength)
@@ -101,8 +105,12 @@ Partial Class FrmSurfaceCalculator
         Controls.Add(BtnCalculateSurface)
         Controls.Add(LblLength)
         Controls.Add(LblWidth)
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "FrmSurfaceCalculator"
-        Text = "FrmLandPlot"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Calculadora de superficie"
         ResumeLayout(False)
         PerformLayout()
     End Sub

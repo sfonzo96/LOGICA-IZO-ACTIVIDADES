@@ -1,25 +1,19 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class FrmLogin
-    Private Username As String
-    Private Password As String
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
-        Username = TxtUsername.Text
-        Password = TxtPassword.Text
-        Login(Username, Password)
+        Login(TxtUsername.Text, TxtPassword.Text)
     End Sub
     Private Sub FrmLogin_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress, BtnLogin.KeyPress, TxtUsername.KeyPress, TxtPassword.KeyPress
         If e.KeyChar = ChrW(Keys.Enter) Then
-            Username = TxtUsername.Text
-            Password = TxtPassword.Text
-            Login(Username, Password)
+            Login(TxtUsername.Text, TxtPassword.Text)
             e.Handled = True
         End If
     End Sub
     Private Sub Login(username As String, password As String)
         Try
-            Dim dbUserService As New DbUserService()
-            Dim user As User = dbUserService.GetUser(username)
+            Dim userService As New DbUsersDataService()
+            'Dim userService As New FsUsersDataService()
+            Dim user As User = userService.GetUser(username)
             If user.Username = username AndAlso user.Password = password Then
                 Dim frmMain As New FrmMain()
                 frmMain.Show()
@@ -38,5 +32,29 @@ Public Class FrmLogin
     End Sub
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TxtUsername.Focus()
+    End Sub
+
+    Private Sub BtnCloseForm_Click(sender As Object, e As EventArgs) Handles BtnCloseForm.Click
+        Close()
+    End Sub
+
+    Private Sub BtnMinimizeForm_Click_1(sender As Object, e As EventArgs) Handles BtnMinimizeForm.Click
+        WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub BtnCloseForm_MouseEnter(sender As Object, e As EventArgs) Handles BtnCloseForm.MouseEnter
+        BtnCloseForm.ForeColor = Color.WhiteSmoke
+    End Sub
+
+    Private Sub BtnCloseForm_MouseLeave(sender As Object, e As EventArgs)
+        BtnCloseForm.ForeColor = ColorTranslator.FromHtml("#AFB3B7")
+    End Sub
+
+    Private Sub BtnMinimizeForm_MouseEnter(sender As Object, e As EventArgs) Handles BtnMinimizeForm.MouseEnter
+        BtnMinimizeForm.ForeColor = Color.WhiteSmoke
+    End Sub
+
+    Private Sub BtnMinimizeForm_Click(sender As Object, e As EventArgs) Handles BtnCloseForm.MouseLeave
+        BtnMinimizeForm.ForeColor = ColorTranslator.FromHtml("#AFB3B7")
     End Sub
 End Class

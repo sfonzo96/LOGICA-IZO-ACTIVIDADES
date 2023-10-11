@@ -1,53 +1,46 @@
-﻿Imports System.Data.SqlClient
-
-Public Class FrmExchange
-    Private usdValue As Decimal
-    Private arsQuantity As Decimal
-    Private usdQuantity As Decimal
-
+﻿Public Class FrmExchange
+    Public Shared Property UsdValue As Decimal
     Private Sub FrmCambio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetExchangeRate()
+        Dim frmNewOperation As New FrmNewOperation()
+        SetPanel(frmNewOperation)
     End Sub
 
-    Private Sub BtnCalculateArsQuantity_Click(sender As Object, e As EventArgs) Handles BtnCalculateArsQuantity.Click
-        Try
-            usdQuantity = CDec(TxtUsdQuantity.Text)
-            arsQuantity = usdValue * usdQuantity
-            TxtArsQuantity.Text = arsQuantity
-
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
     Private Sub BtnUpdateUsdValue_Click(sender As Object, e As EventArgs) Handles BtnUpdateUsdValue.Click
         SetExchangeRate()
     End Sub
+
     Private Sub SetExchangeRate()
-        usdValue = CDec(InputBox("Ingresa la cotización del día:"))
-        TxtUsdValue.Text = usdValue
+        'TODO API FOR DEFAULT VALUE!!!
+        Dim inputValue As String
+        Do
+            inputValue = InputBox("Ingresa la cotización del día:", "Cotización USD")
+            If String.IsNullOrWhiteSpace(inputValue) Then
+                MessageBox.Show("Necesitas ingresar un valor para poder operar.")
+                Continue Do
+            End If
+        Loop While Not IsNumeric(inputValue)
+
+        UsdValue = CDec(inputValue)
+        TxtUsdValue.Text = UsdValue
     End Sub
 
     Private Sub BtnShowRecord_Click(sender As Object, e As EventArgs) Handles BtnShowRecord.Click
-        Dim frmRecord As New FrmRecord()
-
-        frmRecord.ShowDialog()
+        Dim frmRecords As New FrmOperations()
+        SetPanel(frmRecords)
     End Sub
 
-    Private Sub BtnConfirmOperation_Click(sender As Object, e As EventArgs) Handles BtnConfirmOperation.Click
-        Try
-            Dim dbOperationsService As New DbOperationsService()
-            Dim success As Boolean = dbOperationsService.AddOperation(usdValue, usdQuantity, arsQuantity)
-            'Dim fsOperationsService As New FsOperationsService()
-            'Dim success As Boolean = fsOperationsService.AddOperation(usdValue, usdQuantity, arsQuantity)
-            If Not success Then
-                Throw New Exception("Error al registrar operación")
-            Else
-                MessageBox.Show("Operación registrada con éxito")
-            End If
-        Catch sqlEx As SqlException
-            MessageBox.Show("DB error", sqlEx.Message)
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
+    Private Sub BtnNewOperation_Click(sender As Object, e As EventArgs) Handles BtnNewOperation.Click
+        Dim frmNewOperation As New FrmNewOperation()
+        SetPanel(frmNewOperation)
+    End Sub
+
+    Private Sub SetPanel(ByRef form As Form)
+        PanelExchange.Controls.Clear()
+        form.TopLevel = False
+        form.Size = PanelExchange.Size
+        form.Dock = DockStyle.Fill
+        PanelExchange.Controls.Add(form)
+        form.Show()
     End Sub
 End Class

@@ -22,81 +22,37 @@ Partial Class FrmExchange
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        BtnCalculateArsQuantity = New Button()
-        TxtUsdQuantity = New TextBox()
         LblUsdValue = New Label()
         TxtUsdValue = New TextBox()
-        LblUsdQuantity = New Label()
-        LblArsQuantity = New Label()
-        TxtArsQuantity = New TextBox()
         BtnUpdateUsdValue = New Button()
         BtnShowRecord = New Button()
-        BtnConfirmOperation = New Button()
+        BtnNewOperation = New Button()
+        PanelExchange = New Panel()
         SuspendLayout()
-        ' 
-        ' BtnCalculateArsQuantity
-        ' 
-        BtnCalculateArsQuantity.Location = New Point(350, 237)
-        BtnCalculateArsQuantity.Name = "BtnCalculateArsQuantity"
-        BtnCalculateArsQuantity.Size = New Size(100, 40)
-        BtnCalculateArsQuantity.TabIndex = 0
-        BtnCalculateArsQuantity.Text = "Calcular pago"
-        BtnCalculateArsQuantity.UseVisualStyleBackColor = True
-        ' 
-        ' TxtUsdQuantity
-        ' 
-        TxtUsdQuantity.Location = New Point(350, 196)
-        TxtUsdQuantity.Name = "TxtUsdQuantity"
-        TxtUsdQuantity.Size = New Size(100, 23)
-        TxtUsdQuantity.TabIndex = 2
         ' 
         ' LblUsdValue
         ' 
         LblUsdValue.AutoSize = True
-        LblUsdValue.Location = New Point(604, 39)
+        LblUsdValue.Location = New Point(523, 26)
         LblUsdValue.Name = "LblUsdValue"
-        LblUsdValue.Size = New Size(58, 15)
+        LblUsdValue.Size = New Size(61, 15)
         LblUsdValue.TabIndex = 3
-        LblUsdValue.Text = "Valor USD"
+        LblUsdValue.Text = "Valor USD:"
         ' 
         ' TxtUsdValue
         ' 
-        TxtUsdValue.Location = New Point(678, 31)
+        TxtUsdValue.Enabled = False
+        TxtUsdValue.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TxtUsdValue.Location = New Point(590, 22)
         TxtUsdValue.Name = "TxtUsdValue"
         TxtUsdValue.ReadOnly = True
         TxtUsdValue.Size = New Size(100, 23)
         TxtUsdValue.TabIndex = 4
         TxtUsdValue.TabStop = False
         ' 
-        ' LblUsdQuantity
-        ' 
-        LblUsdQuantity.AutoSize = True
-        LblUsdQuantity.Location = New Point(264, 204)
-        LblUsdQuantity.Name = "LblUsdQuantity"
-        LblUsdQuantity.Size = New Size(80, 15)
-        LblUsdQuantity.TabIndex = 5
-        LblUsdQuantity.Text = "Cantidad USD"
-        ' 
-        ' LblArsQuantity
-        ' 
-        LblArsQuantity.AutoSize = True
-        LblArsQuantity.Location = New Point(493, 204)
-        LblArsQuantity.Name = "LblArsQuantity"
-        LblArsQuantity.Size = New Size(70, 15)
-        LblArsQuantity.TabIndex = 6
-        LblArsQuantity.Text = "ARS a pagar"
-        ' 
-        ' TxtArsQuantity
-        ' 
-        TxtArsQuantity.Location = New Point(564, 196)
-        TxtArsQuantity.Name = "TxtArsQuantity"
-        TxtArsQuantity.ReadOnly = True
-        TxtArsQuantity.Size = New Size(100, 23)
-        TxtArsQuantity.TabIndex = 7
-        ' 
         ' BtnUpdateUsdValue
         ' 
-        BtnUpdateUsdValue.Location = New Point(690, 73)
+        BtnUpdateUsdValue.Location = New Point(696, 22)
         BtnUpdateUsdValue.Name = "BtnUpdateUsdValue"
         BtnUpdateUsdValue.Size = New Size(75, 23)
         BtnUpdateUsdValue.TabIndex = 8
@@ -105,51 +61,58 @@ Partial Class FrmExchange
         ' 
         ' BtnShowRecord
         ' 
-        BtnShowRecord.Location = New Point(27, 73)
+        BtnShowRecord.AutoSize = True
+        BtnShowRecord.Location = New Point(27, 12)
         BtnShowRecord.Name = "BtnShowRecord"
         BtnShowRecord.Size = New Size(96, 42)
         BtnShowRecord.TabIndex = 9
         BtnShowRecord.Text = "Ver historial"
         BtnShowRecord.UseVisualStyleBackColor = True
         ' 
-        ' BtnConfirmOperation
+        ' BtnNewOperation
         ' 
-        BtnConfirmOperation.Location = New Point(350, 289)
-        BtnConfirmOperation.Name = "BtnConfirmOperation"
-        BtnConfirmOperation.Size = New Size(100, 40)
-        BtnConfirmOperation.TabIndex = 10
-        BtnConfirmOperation.Text = "Confirmar operación"
-        BtnConfirmOperation.UseVisualStyleBackColor = True
+        BtnNewOperation.Location = New Point(129, 12)
+        BtnNewOperation.Name = "BtnNewOperation"
+        BtnNewOperation.Size = New Size(96, 42)
+        BtnNewOperation.TabIndex = 11
+        BtnNewOperation.Text = "Nueva operación"
+        BtnNewOperation.UseVisualStyleBackColor = True
+        ' 
+        ' PanelExchange
+        ' 
+        PanelExchange.Anchor = AnchorStyles.Left
+        PanelExchange.AutoSize = True
+        PanelExchange.Location = New Point(27, 85)
+        PanelExchange.Name = "PanelExchange"
+        PanelExchange.Size = New Size(744, 370)
+        PanelExchange.TabIndex = 12
         ' 
         ' FrmExchange
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(BtnConfirmOperation)
+        BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
+        ClientSize = New Size(792, 485)
+        ControlBox = False
+        Controls.Add(PanelExchange)
+        Controls.Add(BtnNewOperation)
         Controls.Add(BtnShowRecord)
         Controls.Add(BtnUpdateUsdValue)
-        Controls.Add(TxtArsQuantity)
-        Controls.Add(LblArsQuantity)
-        Controls.Add(LblUsdQuantity)
         Controls.Add(TxtUsdValue)
         Controls.Add(LblUsdValue)
-        Controls.Add(TxtUsdQuantity)
-        Controls.Add(BtnCalculateArsQuantity)
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "FrmExchange"
-        Text = "FrmExchange"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Casa de cambio"
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents BtnCalculateArsQuantity As Button
-    Friend WithEvents TxtUsdQuantity As TextBox
     Friend WithEvents LblUsdValue As Label
     Friend WithEvents TxtUsdValue As TextBox
-    Friend WithEvents LblUsdQuantity As Label
-    Friend WithEvents LblArsQuantity As Label
-    Friend WithEvents TxtArsQuantity As TextBox
     Friend WithEvents BtnUpdateUsdValue As Button
     Friend WithEvents BtnShowRecord As Button
-    Friend WithEvents BtnConfirmOperation As Button
+    Friend WithEvents BtnNewOperation As Button
+    Friend WithEvents PanelExchange As Panel
 End Class

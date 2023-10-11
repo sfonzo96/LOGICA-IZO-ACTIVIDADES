@@ -28,11 +28,15 @@ Partial Class FrmLogin
         TxtUsername = New TextBox()
         TxtPassword = New TextBox()
         LblLoginTitle = New Label()
+        Panel2 = New Panel()
+        BtnMinimizeForm = New Button()
+        BtnCloseForm = New Button()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' BtnLogin
         ' 
-        BtnLogin.Location = New Point(177, 177)
+        BtnLogin.Location = New Point(177, 200)
         BtnLogin.Name = "BtnLogin"
         BtnLogin.Size = New Size(75, 23)
         BtnLogin.TabIndex = 0
@@ -42,7 +46,7 @@ Partial Class FrmLogin
         ' LblUsername
         ' 
         LblUsername.AutoSize = True
-        LblUsername.Location = New Point(89, 84)
+        LblUsername.Location = New Point(91, 102)
         LblUsername.Name = "LblUsername"
         LblUsername.Size = New Size(47, 15)
         LblUsername.TabIndex = 1
@@ -51,7 +55,7 @@ Partial Class FrmLogin
         ' LblPassword
         ' 
         LblPassword.AutoSize = True
-        LblPassword.Location = New Point(89, 135)
+        LblPassword.Location = New Point(91, 153)
         LblPassword.Name = "LblPassword"
         LblPassword.Size = New Size(67, 15)
         LblPassword.TabIndex = 2
@@ -59,14 +63,14 @@ Partial Class FrmLogin
         ' 
         ' TxtUsername
         ' 
-        TxtUsername.Location = New Point(164, 76)
+        TxtUsername.Location = New Point(164, 99)
         TxtUsername.Name = "TxtUsername"
         TxtUsername.Size = New Size(100, 23)
         TxtUsername.TabIndex = 3
         ' 
         ' TxtPassword
         ' 
-        TxtPassword.Location = New Point(164, 127)
+        TxtPassword.Location = New Point(164, 150)
         TxtPassword.Name = "TxtPassword"
         TxtPassword.PasswordChar = "*"c
         TxtPassword.Size = New Size(100, 23)
@@ -75,27 +79,75 @@ Partial Class FrmLogin
         ' LblLoginTitle
         ' 
         LblLoginTitle.AutoSize = True
-        LblLoginTitle.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
-        LblLoginTitle.Location = New Point(162, 26)
+        LblLoginTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
+        LblLoginTitle.Location = New Point(151, 45)
         LblLoginTitle.Name = "LblLoginTitle"
-        LblLoginTitle.Size = New Size(105, 25)
+        LblLoginTitle.Size = New Size(127, 30)
         LblLoginTitle.TabIndex = 5
         LblLoginTitle.Text = "Parcial LED"
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.FromArgb(CByte(45), CByte(74), CByte(83))
+        Panel2.Controls.Add(BtnMinimizeForm)
+        Panel2.Controls.Add(BtnCloseForm)
+        Panel2.Dock = DockStyle.Top
+        Panel2.Location = New Point(0, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(429, 31)
+        Panel2.TabIndex = 6
+        ' 
+        ' BtnMinimizeForm
+        ' 
+        BtnMinimizeForm.BackColor = Color.FromArgb(CByte(45), CByte(74), CByte(83))
+        BtnMinimizeForm.Dock = DockStyle.Right
+        BtnMinimizeForm.FlatAppearance.BorderSize = 0
+        BtnMinimizeForm.FlatStyle = FlatStyle.Flat
+        BtnMinimizeForm.Font = New Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnMinimizeForm.ForeColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
+        BtnMinimizeForm.Location = New Point(367, 0)
+        BtnMinimizeForm.Name = "BtnMinimizeForm"
+        BtnMinimizeForm.Size = New Size(31, 31)
+        BtnMinimizeForm.TabIndex = 6
+        BtnMinimizeForm.Text = "_"
+        BtnMinimizeForm.UseVisualStyleBackColor = False
+        ' 
+        ' BtnCloseForm
+        ' 
+        BtnCloseForm.BackColor = Color.FromArgb(CByte(45), CByte(74), CByte(83))
+        BtnCloseForm.Dock = DockStyle.Right
+        BtnCloseForm.FlatAppearance.BorderSize = 0
+        BtnCloseForm.FlatStyle = FlatStyle.Flat
+        BtnCloseForm.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point)
+        BtnCloseForm.ForeColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
+        BtnCloseForm.Location = New Point(398, 0)
+        BtnCloseForm.Name = "BtnCloseForm"
+        BtnCloseForm.Size = New Size(31, 31)
+        BtnCloseForm.TabIndex = 5
+        BtnCloseForm.Text = "X"
+        BtnCloseForm.UseVisualStyleBackColor = False
         ' 
         ' FrmLogin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
         ClientSize = New Size(429, 269)
+        Controls.Add(Panel2)
         Controls.Add(LblLoginTitle)
         Controls.Add(TxtPassword)
         Controls.Add(TxtUsername)
         Controls.Add(LblPassword)
         Controls.Add(LblUsername)
         Controls.Add(BtnLogin)
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "FrmLogin"
+        RightToLeft = RightToLeft.No
         StartPosition = FormStartPosition.CenterScreen
-        Text = "FrmLogin"
+        Text = "Ingreso"
+        Panel2.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -106,4 +158,7 @@ Partial Class FrmLogin
     Friend WithEvents TxtUsername As TextBox
     Friend WithEvents TxtPassword As TextBox
     Friend WithEvents LblLoginTitle As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents BtnMinimizeForm As Button
+    Friend WithEvents BtnCloseForm As Button
 End Class

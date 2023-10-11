@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class DbUserService
+Public Class DbUsersDataService
     ' MSI String
     Private ReadOnly ConnectionString As String = "Server=localhost\MSSQLSERVER01;Database=exchange;Trusted_Connection=True;"
     ' Compaq String
