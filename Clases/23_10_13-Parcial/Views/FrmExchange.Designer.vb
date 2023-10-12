@@ -24,8 +24,8 @@ Partial Class FrmExchange
     Private Sub InitializeComponent()
         LblUsdValue = New Label()
         TxtUsdValue = New TextBox()
-        BtnUpdateUsdValue = New Button()
-        BtnShowRecord = New Button()
+        BtnUpdateUsdRate = New Button()
+        BtnShowOperations = New Button()
         BtnNewOperation = New Button()
         PanelExchange = New Panel()
         SuspendLayout()
@@ -50,24 +50,24 @@ Partial Class FrmExchange
         TxtUsdValue.TabIndex = 4
         TxtUsdValue.TabStop = False
         ' 
-        ' BtnUpdateUsdValue
+        ' BtnUpdateUsdRate
         ' 
-        BtnUpdateUsdValue.Location = New Point(696, 22)
-        BtnUpdateUsdValue.Name = "BtnUpdateUsdValue"
-        BtnUpdateUsdValue.Size = New Size(75, 23)
-        BtnUpdateUsdValue.TabIndex = 8
-        BtnUpdateUsdValue.Text = "Actualizar"
-        BtnUpdateUsdValue.UseVisualStyleBackColor = True
+        BtnUpdateUsdRate.Location = New Point(696, 22)
+        BtnUpdateUsdRate.Name = "BtnUpdateUsdRate"
+        BtnUpdateUsdRate.Size = New Size(75, 23)
+        BtnUpdateUsdRate.TabIndex = 8
+        BtnUpdateUsdRate.Text = "Actualizar"
+        BtnUpdateUsdRate.UseVisualStyleBackColor = True
         ' 
-        ' BtnShowRecord
+        ' BtnShowOperations
         ' 
-        BtnShowRecord.AutoSize = True
-        BtnShowRecord.Location = New Point(27, 12)
-        BtnShowRecord.Name = "BtnShowRecord"
-        BtnShowRecord.Size = New Size(96, 42)
-        BtnShowRecord.TabIndex = 9
-        BtnShowRecord.Text = "Ver historial"
-        BtnShowRecord.UseVisualStyleBackColor = True
+        BtnShowOperations.AutoSize = True
+        BtnShowOperations.Location = New Point(27, 12)
+        BtnShowOperations.Name = "BtnShowOperations"
+        BtnShowOperations.Size = New Size(96, 42)
+        BtnShowOperations.TabIndex = 9
+        BtnShowOperations.Text = "Ver historial"
+        BtnShowOperations.UseVisualStyleBackColor = True
         ' 
         ' BtnNewOperation
         ' 
@@ -96,8 +96,8 @@ Partial Class FrmExchange
         ControlBox = False
         Controls.Add(PanelExchange)
         Controls.Add(BtnNewOperation)
-        Controls.Add(BtnShowRecord)
-        Controls.Add(BtnUpdateUsdValue)
+        Controls.Add(BtnShowOperations)
+        Controls.Add(BtnUpdateUsdRate)
         Controls.Add(TxtUsdValue)
         Controls.Add(LblUsdValue)
         FormBorderStyle = FormBorderStyle.None
@@ -111,8 +111,8 @@ Partial Class FrmExchange
     End Sub
     Friend WithEvents LblUsdValue As Label
     Friend WithEvents TxtUsdValue As TextBox
-    Friend WithEvents BtnUpdateUsdValue As Button
-    Friend WithEvents BtnShowRecord As Button
+    Friend WithEvents BtnUpdateUsdRate As Button
+    Friend WithEvents BtnShowOperations As Button
     Friend WithEvents BtnNewOperation As Button
     Friend WithEvents PanelExchange As Panel
 End Class
