@@ -1,9 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class FrmOperations
-    Private Sub DGridRecords_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGridOperations.CellContentClick
-
-    End Sub
     Private Sub FrmRecord_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             'Dim dbOperationService As New DbOperationsDataService()

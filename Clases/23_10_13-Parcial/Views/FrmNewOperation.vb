@@ -11,7 +11,6 @@ Public Class FrmNewOperation
             Dim fsSuccess As Boolean = fsOperationsService.AddOperation(FrmExchange.UsdValue, usdQuantity, arsQuantity)
             If Not (dbSuccess AndAlso fsSuccess) Then
                 MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                'Throw New Exception("Error al registrar operación")
             Else
                 MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
