@@ -1,10 +1,7 @@
 ﻿Imports System.IO
 
 Public Class FsUsersDataService
-    'Private ReadOnly FilePath As String = "C:\Deposito\Programación\IZO\MATERIAS\1° AÑO\LÓGICA Y ESTRUCTURA DE DATOS\ACTIVIDADES\Clases\Clases\23_10_13-Parcial\users.txt"
-    Private workingDirectory As String = Environment.CurrentDirectory
-    Private projectDirectory As String = Directory.GetParent(workingDirectory).Parent.Parent.FullName
-    Private ReadOnly FilePath As String = Path.Combine(projectDirectory, "TxtData\users.txt")
+    Private ReadOnly FilePath As String = "..\..\..\TxtData\users.txt"
     Public Function GetUser(username As String) As User
 
         If Not File.Exists(FilePath) Then

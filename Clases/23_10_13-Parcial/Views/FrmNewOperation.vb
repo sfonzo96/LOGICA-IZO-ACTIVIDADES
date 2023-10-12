@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Globalization
 
 Public Class FrmNewOperation
     Private arsQuantity As Decimal
@@ -24,12 +25,14 @@ Public Class FrmNewOperation
     Private Sub BtnCalculateArsQuantity_Click(sender As Object, e As EventArgs) Handles BtnCalculateArsQuantity.Click
         Try
             If Not IsNumeric(TxtUsdQuantity.Text) Then
-                MessageBox.Show("El valor ingresado no es válido.", "Entrada invalida", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Else
-                usdQuantity = CDec(TxtUsdQuantity.Text)
-                arsQuantity = FrmExchange.UsdValue * usdQuantity
-                TxtArsQuantity.Text = arsQuantity
+                MessageBox.Show("El valor ingresado no es válido.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
             End If
+
+            usdQuantity = Decimal.Parse(TxtUsdQuantity.Text.Replace(".", ","))
+            arsQuantity = FrmExchange.UsdValue * usdQuantity
+            TxtArsQuantity.Text = arsQuantity
+
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try

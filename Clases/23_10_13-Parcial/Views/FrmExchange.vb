@@ -32,33 +32,28 @@
         form.Show()
     End Sub
 
-    Private Function ValueIsValid(inputValue As String) As Boolean
+    Private Sub ShowInputErrorMessage(inputValue As String)
         Try
-
             If Not IsNumeric(inputValue) AndAlso UsdValue.Equals(0) Then
-                MessageBox.Show("Para acceder y registrar una nueva operación tenés que fijar un tipo de cambio válido.")
-                Return False
+                MessageBox.Show("Para acceder y registrar una nueva operación tenés que fijar un tipo de cambio válido.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             ElseIf Not IsNumeric(inputValue) Then
-                MessageBox.Show("El valor ingresado debe ser numérico. Intenta actualizarlo nuevamente.")
-                Return False
+                MessageBox.Show("El valor ingresado debe ser numérico. Intenta actualizarlo nuevamente.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
-
-            Return True
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Return False
         End Try
-    End Function
+    End Sub
     Private Sub SetUsdValueByPrompt()
         Try
             Dim inputValue As String = InputBox("Ingresa la cotización del día:", "Cotización USD")
 
-            If Not ValueIsValid(inputValue) Then
+            If Not IsNumeric(inputValue) Then
                 NewOperationIsAllowed = False
+                ShowInputErrorMessage(inputValue)
                 Return
             End If
 
-            UsdValue = CDec(inputValue)
+            UsdValue = Decimal.Parse(inputValue.Replace(".", ","))
             TxtUsdValue.Text = UsdValue
             NewOperationIsAllowed = True
 

@@ -19,5 +19,6 @@
  --INSERT INTO users (username,password,nickname)  
  --values ('izo','izo2023','Izo'),
 --		('mauricio','mauri123','Mauricio');
+--		('santi','santi123','Santiago)
 
 -- SELECT * FROM users;

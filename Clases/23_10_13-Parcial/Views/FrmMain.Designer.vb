@@ -22,6 +22,7 @@ Partial Class FrmMain
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(FrmMain))
         BtnSurfaceCalculator = New Button()
         BtnExchange = New Button()
         PanelMenu = New Panel()
@@ -142,8 +143,10 @@ Partial Class FrmMain
         Controls.Add(PanelMenu)
         Controls.Add(PanelControlBar)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "FrmMain"
+        ShowIcon = False
         StartPosition = FormStartPosition.CenterScreen
         Text = "Selección de programa"
         PanelMenu.ResumeLayout(False)

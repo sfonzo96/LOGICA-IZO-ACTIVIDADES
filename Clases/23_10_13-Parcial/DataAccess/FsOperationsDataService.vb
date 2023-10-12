@@ -1,10 +1,7 @@
 ﻿Imports System.IO
 
 Public Class FsOperationsDataService
-    'Private ReadOnly FilePath As String = "C:\Deposito\Programación\IZO\MATERIAS\1° AÑO\LÓGICA Y ESTRUCTURA DE DATOS\ACTIVIDADES\Clases\Clases\23_10_13-Parcial\records.txt"
-    Private workingDirectory As String = Environment.CurrentDirectory
-    Private projectDirectory As String = Directory.GetParent(workingDirectory).Parent.Parent.FullName
-    Private ReadOnly FilePath As String = Path.Combine(projectDirectory, "TxtData\operations.txt")
+    Private ReadOnly FilePath As String = "..\..\..\TxtData\operations.txt"
     Public Function AddOperation(usdValue As Decimal, usdQuantity As Decimal, arsQuantity As Decimal) As Boolean
         If Not File.Exists(FilePath) Then
             Throw New Exception($"No se encontró el archivo en ¨{FilePath}")
