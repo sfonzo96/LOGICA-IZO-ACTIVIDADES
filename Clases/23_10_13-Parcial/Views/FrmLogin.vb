@@ -19,15 +19,13 @@ Public Class FrmLogin
                 frmMain.Show()
                 Close()
             Else
-                MessageBox.Show("Credenciales incorrectas. Intenta nuevamente")
+                MessageBox.Show("El usuario y/o contraseña son incorrectos. Intenta nuevamente", "Credenciales incorrectas", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 TxtPassword.Clear()
                 TxtUsername.Clear()
                 TxtUsername.Focus()
             End If
-        Catch sqlEx As SqlException
-            MessageBox.Show("SQL Error", sqlEx.Message)
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show(ex.Message, "Credenciales incorrectas", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -45,7 +45,7 @@ Partial Class FrmOperations
         DGridOperations.TabIndex = 0
         DGridOperations.TabStop = False
         ' 
-        ' FrmRecords
+        ' FrmOperations
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -54,7 +54,7 @@ Partial Class FrmOperations
         ClientSize = New Size(642, 347)
         Controls.Add(DGridOperations)
         FormBorderStyle = FormBorderStyle.None
-        Name = "FrmRecords"
+        Name = "FrmOperations"
         Text = "FrmRecord"
         CType(DGridOperations, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

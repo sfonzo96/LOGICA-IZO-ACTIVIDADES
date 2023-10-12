@@ -21,7 +21,7 @@ Public Class DbUsersDataService
 
                 Using dataReader As SqlDataReader = sqlCommand.ExecuteReader()
                     If Not dataReader.Read() Then
-                        Throw New Exception("No se pudo obtener la información del usuario. Revisa tus credenciales e intenta nuevamente.")
+                        Throw New Exception("El usuario y/o contraseña son incorrectos. Intenta nuevamente")
                     End If
                     user = New User(dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3))
                 End Using

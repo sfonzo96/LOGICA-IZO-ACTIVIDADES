@@ -10,11 +10,13 @@ Public Class FrmNewOperation
             Dim dbSuccess As Boolean = dbOperationsService.AddOperation(FrmExchange.UsdValue, usdQuantity, arsQuantity)
             Dim fsOperationsService As New FsOperationsDataService()
             Dim fsSuccess As Boolean = fsOperationsService.AddOperation(FrmExchange.UsdValue, usdQuantity, arsQuantity)
+
             If Not (dbSuccess AndAlso fsSuccess) Then
                 MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
+
             ClearForm()
         Catch sqlEx As SqlException
             MessageBox.Show(sqlEx.Message, "DB error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -32,9 +34,8 @@ Public Class FrmNewOperation
             usdQuantity = Decimal.Parse(TxtUsdQuantity.Text.Replace(".", ","))
             arsQuantity = FrmExchange.UsdValue * usdQuantity
             TxtArsQuantity.Text = arsQuantity
-
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show(ex.Message, "Ha ocurrido un error...", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
     Private Sub ClearForm()

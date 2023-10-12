@@ -62,5 +62,4 @@
             NewOperationIsAllowed = False
         End Try
     End Sub
-
 End Class
