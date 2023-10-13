@@ -39,7 +39,7 @@ Partial Class FrmLogin
         BtnLogin.Location = New Point(177, 200)
         BtnLogin.Name = "BtnLogin"
         BtnLogin.Size = New Size(75, 23)
-        BtnLogin.TabIndex = 0
+        BtnLogin.TabIndex = 2
         BtnLogin.Text = "Ingresar"
         BtnLogin.UseVisualStyleBackColor = True
         ' 
@@ -66,7 +66,7 @@ Partial Class FrmLogin
         TxtUsername.Location = New Point(164, 99)
         TxtUsername.Name = "TxtUsername"
         TxtUsername.Size = New Size(100, 23)
-        TxtUsername.TabIndex = 3
+        TxtUsername.TabIndex = 0
         ' 
         ' TxtPassword
         ' 
@@ -74,7 +74,7 @@ Partial Class FrmLogin
         TxtPassword.Name = "TxtPassword"
         TxtPassword.PasswordChar = "*"c
         TxtPassword.Size = New Size(100, 23)
-        TxtPassword.TabIndex = 4
+        TxtPassword.TabIndex = 1
         ' 
         ' LblLoginTitle
         ' 
@@ -109,6 +109,7 @@ Partial Class FrmLogin
         BtnMinimizeForm.Name = "BtnMinimizeForm"
         BtnMinimizeForm.Size = New Size(31, 31)
         BtnMinimizeForm.TabIndex = 6
+        BtnMinimizeForm.TabStop = False
         BtnMinimizeForm.Text = "_"
         BtnMinimizeForm.UseVisualStyleBackColor = False
         ' 
@@ -124,6 +125,7 @@ Partial Class FrmLogin
         BtnCloseForm.Name = "BtnCloseForm"
         BtnCloseForm.Size = New Size(31, 31)
         BtnCloseForm.TabIndex = 5
+        BtnCloseForm.TabStop = False
         BtnCloseForm.Text = "X"
         BtnCloseForm.UseVisualStyleBackColor = False
         ' 

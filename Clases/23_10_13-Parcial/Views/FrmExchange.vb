@@ -1,7 +1,7 @@
 ﻿Public Class FrmExchange
     Public Shared Property UsdValue As Decimal
     Private Property NewOperationIsAllowed As Boolean = False
-    Private Sub BtnUpdateUsdRate_Click(sender As Object, e As EventArgs) Handles BtnUpdateUsdRate.Click
+    Private Sub BtnUpdateUsdValue_Click(sender As Object, e As EventArgs) Handles BtnUpdateUsdValue.Click
         SetUsdValueByPrompt()
     End Sub
 

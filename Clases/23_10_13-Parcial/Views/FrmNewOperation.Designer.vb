@@ -44,6 +44,7 @@ Partial Class FrmNewOperation
         ' TxtArsQuantity
         ' 
         TxtArsQuantity.Anchor = AnchorStyles.None
+        TxtArsQuantity.Enabled = False
         TxtArsQuantity.Location = New Point(429, 144)
         TxtArsQuantity.Name = "TxtArsQuantity"
         TxtArsQuantity.ReadOnly = True

@@ -44,7 +44,7 @@ Partial Class FrmMain
         BtnSurfaceCalculator.Location = New Point(18, 190)
         BtnSurfaceCalculator.Name = "BtnSurfaceCalculator"
         BtnSurfaceCalculator.Size = New Size(105, 55)
-        BtnSurfaceCalculator.TabIndex = 0
+        BtnSurfaceCalculator.TabIndex = 1
         BtnSurfaceCalculator.Text = "Calculadora de superficie"
         BtnSurfaceCalculator.UseVisualStyleBackColor = True
         ' 
@@ -57,7 +57,7 @@ Partial Class FrmMain
         BtnExchange.Location = New Point(18, 126)
         BtnExchange.Name = "BtnExchange"
         BtnExchange.Size = New Size(105, 55)
-        BtnExchange.TabIndex = 1
+        BtnExchange.TabIndex = 0
         BtnExchange.Text = "Casa de cambio"
         BtnExchange.UseVisualStyleBackColor = True
         ' 
@@ -106,6 +106,7 @@ Partial Class FrmMain
         BtnMinimizeForm.Name = "BtnMinimizeForm"
         BtnMinimizeForm.Size = New Size(31, 31)
         BtnMinimizeForm.TabIndex = 6
+        BtnMinimizeForm.TabStop = False
         BtnMinimizeForm.Text = "_"
         BtnMinimizeForm.UseVisualStyleBackColor = False
         ' 
@@ -121,6 +122,7 @@ Partial Class FrmMain
         BtnCloseForm.Name = "BtnCloseForm"
         BtnCloseForm.Size = New Size(31, 31)
         BtnCloseForm.TabIndex = 5
+        BtnCloseForm.TabStop = False
         BtnCloseForm.Text = "X"
         BtnCloseForm.UseVisualStyleBackColor = False
         ' 

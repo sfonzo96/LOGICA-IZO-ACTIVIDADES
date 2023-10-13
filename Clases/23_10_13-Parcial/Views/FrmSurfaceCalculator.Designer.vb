@@ -64,14 +64,14 @@ Partial Class FrmSurfaceCalculator
         TxtWidth.Location = New Point(246, 178)
         TxtWidth.Name = "TxtWidth"
         TxtWidth.Size = New Size(100, 23)
-        TxtWidth.TabIndex = 3
+        TxtWidth.TabIndex = 0
         ' 
         ' TxtLength
         ' 
         TxtLength.Location = New Point(246, 236)
         TxtLength.Name = "TxtLength"
         TxtLength.Size = New Size(100, 23)
-        TxtLength.TabIndex = 4
+        TxtLength.TabIndex = 1
         ' 
         ' LblSurface
         ' 

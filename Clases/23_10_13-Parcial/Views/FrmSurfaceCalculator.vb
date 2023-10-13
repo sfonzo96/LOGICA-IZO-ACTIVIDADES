@@ -16,4 +16,8 @@
         TxtWidth.Clear()
         TxtLength.Clear()
     End Sub
+
+    Private Sub FrmSurfaceCalculator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TxtWidth.Focus()
+    End Sub
 End Class
