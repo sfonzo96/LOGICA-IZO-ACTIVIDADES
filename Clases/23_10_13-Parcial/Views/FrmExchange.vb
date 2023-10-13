@@ -37,13 +37,17 @@
 
     Private Sub ShowInputErrorMessage(inputValue As String)
         Try
+            Dim messageText As String = "Algo no anda bien."
+
             If Not IsNumeric(inputValue) AndAlso UsdValue.Equals(0) Then
-                MessageBox.Show("Para acceder y registrar una nueva operación tenés que fijar un tipo de cambio válido.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                messageText = "Para acceder y registrar una nueva operación tenés que fijar un tipo de cambio válido."
             ElseIf Not IsNumeric(inputValue) Then
-                MessageBox.Show("El valor ingresado debe ser numérico y positivo. Intenta actualizarlo nuevamente.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                messageText = "El valor ingresado debe ser numérico. Intenta actualizarlo nuevamente."
             ElseIf Decimal.Parse(inputValue) <= 0 Then
-                MessageBox.Show("El valor ingresado debe ser positivo. Intenta actualizarlo nuevamente.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                messageText = "El valor ingresado debe ser positivo. Intenta actualizarlo nuevamente."
             End If
+
+            MessageBox.Show(messageText, "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

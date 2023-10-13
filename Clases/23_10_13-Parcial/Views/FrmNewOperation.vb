@@ -1,23 +1,27 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Globalization
 
 Public Class FrmNewOperation
-    Private arsQuantity As Decimal
-    Private usdQuantity As Decimal
+    Private ArsQuantity As Decimal
+    Private UsdQuantity As Decimal
     Private Sub BtnConfirmOperation_Click(sender As Object, e As EventArgs) Handles BtnConfirmOperation.Click
         Try
-            Dim dbOperationsService As New DbOperationsDataService()
-            Dim dbSuccess As Boolean = dbOperationsService.AddOperation(FrmExchange.UsdValue, usdQuantity, arsQuantity)
-            Dim fsOperationsService As New FsOperationsDataService()
-            Dim fsSuccess As Boolean = fsOperationsService.AddOperation(FrmExchange.UsdValue, usdQuantity, arsQuantity)
-
-            If Not (dbSuccess AndAlso fsSuccess) Then
-                MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Else
-                MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            If (ArsQuantity = 0 OrElse UsdQuantity = 0 OrElse FrmExchange.UsdValue = 0) Then
+                MessageBox.Show("Por favor revisa que ningún campo esté vacío.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
             End If
 
-            ClearForm()
+            Dim dbOperationsService As New DbOperationsDataService()
+                Dim dbSuccess As Boolean = dbOperationsService.AddOperation(FrmExchange.UsdValue, UsdQuantity, ArsQuantity)
+                Dim fsOperationsService As New FsOperationsDataService()
+                Dim fsSuccess As Boolean = fsOperationsService.AddOperation(FrmExchange.UsdValue, UsdQuantity, ArsQuantity)
+
+                If Not (dbSuccess AndAlso fsSuccess) Then
+                    MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+
+                ClearForm()
         Catch sqlEx As SqlException
             MessageBox.Show(sqlEx.Message, "DB error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Catch ex As Exception
@@ -31,9 +35,9 @@ Public Class FrmNewOperation
                 Return
             End If
 
-            usdQuantity = Decimal.Parse(TxtUsdQuantity.Text.Replace(".", ","))
-            arsQuantity = FrmExchange.UsdValue * usdQuantity
-            TxtArsQuantity.Text = arsQuantity
+            UsdQuantity = Decimal.Parse(TxtUsdQuantity.Text.Replace(".", ","))
+            ArsQuantity = FrmExchange.UsdValue * UsdQuantity
+            TxtArsQuantity.Text = ArsQuantity
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Ha ocurrido un error...", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
