@@ -82,7 +82,7 @@ Partial Class FrmExchange
         ' 
         PanelExchange.Anchor = AnchorStyles.Left
         PanelExchange.AutoSize = True
-        PanelExchange.Location = New Point(27, 85)
+        PanelExchange.Location = New Point(24, 85)
         PanelExchange.Name = "PanelExchange"
         PanelExchange.Size = New Size(744, 370)
         PanelExchange.TabIndex = 12

@@ -1,6 +1,6 @@
 ﻿Public Class FrmExchange
     Public Shared Property UsdValue As Decimal
-    Private Property NewOperationIsAllowed As Boolean
+    Private Property NewOperationIsAllowed As Boolean = False
     Private Sub BtnUpdateUsdRate_Click(sender As Object, e As EventArgs) Handles BtnUpdateUsdRate.Click
         SetUsdValueByPrompt()
     End Sub
@@ -12,7 +12,10 @@
 
     Private Sub BtnNewOperation_Click(sender As Object, e As EventArgs) Handles BtnNewOperation.Click
         Try
-            SetUsdValueByPrompt()
+            If Not NewOperationIsAllowed Then
+                SetUsdValueByPrompt()
+            End If
+
             If NewOperationIsAllowed Then
                 Dim frmNewOperation As New FrmNewOperation()
                 SetPanel(frmNewOperation)
@@ -50,7 +53,6 @@
             Dim inputValue As String = InputBox("Ingresa la cotización del día:", "Cotización USD")
 
             If Not IsNumeric(inputValue) OrElse Decimal.Parse(inputValue) <= 0 Then
-                NewOperationIsAllowed = False
                 ShowInputErrorMessage(inputValue)
                 Return
             End If

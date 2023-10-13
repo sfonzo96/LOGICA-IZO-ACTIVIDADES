@@ -1,4 +1,5 @@
 -- CREATE DATABASE exchange;
+
 --USE exchange;
 
 --CREATE TABLE operations (
@@ -20,5 +21,3 @@
  --values ('izo','izo2023','Izo'),
 --		('mauricio','mauri123','Mauricio');
 --		('santi','santi123','Santiago)
-
--- SELECT * FROM users;

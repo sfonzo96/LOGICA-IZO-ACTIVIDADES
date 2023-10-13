@@ -19,7 +19,7 @@
         BtnCloseForm.ForeColor = Color.WhiteSmoke
     End Sub
 
-    Private Sub BtnCloseForm_MouseLeave(sender As Object, e As EventArgs)
+    Private Sub BtnCloseForm_MouseLeave(sender As Object, e As EventArgs) Handles BtnCloseForm.MouseLeave
         BtnCloseForm.ForeColor = ColorTranslator.FromHtml("#AFB3B7")
     End Sub
 
@@ -27,7 +27,7 @@
         BtnMinimizeForm.ForeColor = Color.WhiteSmoke
     End Sub
 
-    Private Sub BtnMinimizeForm_Click(sender As Object, e As EventArgs) Handles BtnCloseForm.MouseLeave
+    Private Sub BtnMinimizeForm_Click(sender As Object, e As EventArgs) Handles BtnMinimizeForm.MouseLeave
         BtnMinimizeForm.ForeColor = ColorTranslator.FromHtml("#AFB3B7")
     End Sub
 

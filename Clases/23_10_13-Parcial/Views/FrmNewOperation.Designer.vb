@@ -34,7 +34,7 @@ Partial Class FrmNewOperation
         ' BtnConfirmOperation
         ' 
         BtnConfirmOperation.Anchor = AnchorStyles.None
-        BtnConfirmOperation.Location = New Point(378, 173)
+        BtnConfirmOperation.Location = New Point(429, 185)
         BtnConfirmOperation.Name = "BtnConfirmOperation"
         BtnConfirmOperation.Size = New Size(100, 40)
         BtnConfirmOperation.TabIndex = 22
@@ -44,7 +44,7 @@ Partial Class FrmNewOperation
         ' TxtArsQuantity
         ' 
         TxtArsQuantity.Anchor = AnchorStyles.None
-        TxtArsQuantity.Location = New Point(378, 132)
+        TxtArsQuantity.Location = New Point(429, 144)
         TxtArsQuantity.Name = "TxtArsQuantity"
         TxtArsQuantity.ReadOnly = True
         TxtArsQuantity.Size = New Size(100, 23)
@@ -54,7 +54,7 @@ Partial Class FrmNewOperation
         ' 
         LblArsQuantity.Anchor = AnchorStyles.None
         LblArsQuantity.AutoSize = True
-        LblArsQuantity.Location = New Point(302, 135)
+        LblArsQuantity.Location = New Point(353, 147)
         LblArsQuantity.Name = "LblArsQuantity"
         LblArsQuantity.Size = New Size(70, 15)
         LblArsQuantity.TabIndex = 20
@@ -64,7 +64,7 @@ Partial Class FrmNewOperation
         ' 
         LblUsdQuantity.Anchor = AnchorStyles.None
         LblUsdQuantity.AutoSize = True
-        LblUsdQuantity.Location = New Point(78, 135)
+        LblUsdQuantity.Location = New Point(129, 147)
         LblUsdQuantity.Name = "LblUsdQuantity"
         LblUsdQuantity.Size = New Size(80, 15)
         LblUsdQuantity.TabIndex = 19
@@ -73,7 +73,7 @@ Partial Class FrmNewOperation
         ' TxtUsdQuantity
         ' 
         TxtUsdQuantity.Anchor = AnchorStyles.None
-        TxtUsdQuantity.Location = New Point(164, 132)
+        TxtUsdQuantity.Location = New Point(215, 144)
         TxtUsdQuantity.Name = "TxtUsdQuantity"
         TxtUsdQuantity.Size = New Size(100, 23)
         TxtUsdQuantity.TabIndex = 18
@@ -81,7 +81,7 @@ Partial Class FrmNewOperation
         ' BtnCalculateArsQuantity
         ' 
         BtnCalculateArsQuantity.Anchor = AnchorStyles.None
-        BtnCalculateArsQuantity.Location = New Point(164, 173)
+        BtnCalculateArsQuantity.Location = New Point(215, 185)
         BtnCalculateArsQuantity.Name = "BtnCalculateArsQuantity"
         BtnCalculateArsQuantity.Size = New Size(100, 40)
         BtnCalculateArsQuantity.TabIndex = 17
@@ -92,7 +92,7 @@ Partial Class FrmNewOperation
         ' 
         LblNewOperationTitle.AutoSize = True
         LblNewOperationTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
-        LblNewOperationTitle.Location = New Point(190, 37)
+        LblNewOperationTitle.Location = New Point(241, 37)
         LblNewOperationTitle.Name = "LblNewOperationTitle"
         LblNewOperationTitle.Size = New Size(262, 30)
         LblNewOperationTitle.TabIndex = 23
@@ -104,7 +104,7 @@ Partial Class FrmNewOperation
         AutoScaleMode = AutoScaleMode.Font
         AutoSizeMode = AutoSizeMode.GrowAndShrink
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
-        ClientSize = New Size(642, 347)
+        ClientSize = New Size(744, 370)
         Controls.Add(LblNewOperationTitle)
         Controls.Add(BtnConfirmOperation)
         Controls.Add(TxtArsQuantity)

@@ -19,3 +19,9 @@
         2.  Funcionalidad. (Sin errores en interfaz, esta debe ser intuitiva y amigable – sin errores de cálculos en los respectivos algoritmos).
         3.  Correcta elección de los controles a utilizar.
         4.  Poder explicar el funcionamiento del SOFTWARE y ser capaz de localizar rápidamente en el código los cálculos realizados como también ser capaz de realizar cambios en el mismo.
+
+### Consideraciones para utilizar software
+
+- El software se desarrollo implementando .NET 6.0
+- Para el funcionamiento completo del programa (con base de datos, SQL Server) se deben ejecutar los scripts que se encuentran en la carpeta "SQLScritps"
+- Las string de conexión a la base de datos deben modificarse de acuerdo al equipo en el que se use el software

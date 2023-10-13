@@ -35,7 +35,7 @@ Partial Class FrmOperations
         DGridOperations.Anchor = AnchorStyles.None
         DGridOperations.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGridOperations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGridOperations.Location = New Point(0, 0)
+        DGridOperations.Location = New Point(51, 12)
         DGridOperations.Name = "DGridOperations"
         DGridOperations.ReadOnly = True
         DGridOperations.RowHeadersVisible = False
@@ -51,7 +51,7 @@ Partial Class FrmOperations
         AutoScaleMode = AutoScaleMode.Font
         AutoSizeMode = AutoSizeMode.GrowAndShrink
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
-        ClientSize = New Size(642, 347)
+        ClientSize = New Size(744, 370)
         Controls.Add(DGridOperations)
         FormBorderStyle = FormBorderStyle.None
         Name = "FrmOperations"
