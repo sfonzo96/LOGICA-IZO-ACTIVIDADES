@@ -3,8 +3,8 @@
 Public Class FrmSurfaceCalculator
     Private Sub BtnCalculateSurface_Click(sender As Object, e As EventArgs) Handles BtnCalculateSurface.Click
         Try
-            If Not IsNumeric(TxtWidth.Text) OrElse Not IsNumeric(TxtLength.Text) Then
-                MessageBox.Show(MessageBox.Show("Alguno de los valores ingresados nos es válido.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning))
+            If Not IsNumeric(TxtWidth.Text) OrElse Not IsNumeric(TxtLength.Text) AndAlso Decimal.Parse(TxtWidth.Text) <= 0 OrElse Decimal.Parse(TxtLength.Text) <= 0 Then
+                MessageBox.Show("Alguno de los valores ingresados nos es válido. Revisa que sean números positivos", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return
             End If
 

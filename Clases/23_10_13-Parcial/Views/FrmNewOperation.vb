@@ -26,8 +26,8 @@ Public Class FrmNewOperation
     End Sub
     Private Sub BtnCalculateArsQuantity_Click(sender As Object, e As EventArgs) Handles BtnCalculateArsQuantity.Click
         Try
-            If Not IsNumeric(TxtUsdQuantity.Text) Then
-                MessageBox.Show("El valor ingresado no es válido.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            If Not IsNumeric(TxtUsdQuantity.Text) OrElse Decimal.Parse(TxtUsdQuantity.Text) <= 0 Then
+                MessageBox.Show("El valor ingresado no es válido. Ingresa un valor numérico y positivo.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return
             End If
 

@@ -37,7 +37,9 @@
             If Not IsNumeric(inputValue) AndAlso UsdValue.Equals(0) Then
                 MessageBox.Show("Para acceder y registrar una nueva operación tenés que fijar un tipo de cambio válido.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             ElseIf Not IsNumeric(inputValue) Then
-                MessageBox.Show("El valor ingresado debe ser numérico. Intenta actualizarlo nuevamente.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("El valor ingresado debe ser numérico y positivo. Intenta actualizarlo nuevamente.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            ElseIf Decimal.Parse(inputValue) <= 0 Then
+                MessageBox.Show("El valor ingresado debe ser positivo. Intenta actualizarlo nuevamente.", "Datos inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -47,7 +49,7 @@
         Try
             Dim inputValue As String = InputBox("Ingresa la cotización del día:", "Cotización USD")
 
-            If Not IsNumeric(inputValue) Then
+            If Not IsNumeric(inputValue) OrElse Decimal.Parse(inputValue) <= 0 Then
                 NewOperationIsAllowed = False
                 ShowInputErrorMessage(inputValue)
                 Return

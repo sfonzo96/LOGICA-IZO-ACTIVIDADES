@@ -29,6 +29,7 @@ Partial Class FrmSurfaceCalculator
         TxtLength = New TextBox()
         LblSurface = New Label()
         TxtSurface = New TextBox()
+        LblSurfaceCalcTitle = New Label()
         SuspendLayout()
         ' 
         ' LblWidth
@@ -92,12 +93,23 @@ Partial Class FrmSurfaceCalculator
         TxtSurface.TabIndex = 6
         TxtSurface.TabStop = False
         ' 
+        ' LblSurfaceCalcTitle
+        ' 
+        LblSurfaceCalcTitle.AutoSize = True
+        LblSurfaceCalcTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
+        LblSurfaceCalcTitle.Location = New Point(265, 64)
+        LblSurfaceCalcTitle.Name = "LblSurfaceCalcTitle"
+        LblSurfaceCalcTitle.Size = New Size(228, 30)
+        LblSurfaceCalcTitle.TabIndex = 24
+        LblSurfaceCalcTitle.Text = "Calculo de superficie"
+        ' 
         ' FrmSurfaceCalculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
         ClientSize = New Size(792, 485)
+        Controls.Add(LblSurfaceCalcTitle)
         Controls.Add(TxtSurface)
         Controls.Add(LblSurface)
         Controls.Add(TxtLength)
@@ -122,4 +134,5 @@ Partial Class FrmSurfaceCalculator
     Friend WithEvents TxtLength As TextBox
     Friend WithEvents LblSurface As Label
     Friend WithEvents TxtSurface As TextBox
+    Friend WithEvents LblSurfaceCalcTitle As Label
 End Class

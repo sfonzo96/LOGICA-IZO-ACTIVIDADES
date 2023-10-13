@@ -28,6 +28,7 @@ Partial Class FrmNewOperation
         LblUsdQuantity = New Label()
         TxtUsdQuantity = New TextBox()
         BtnCalculateArsQuantity = New Button()
+        LblNewOperationTitle = New Label()
         SuspendLayout()
         ' 
         ' BtnConfirmOperation
@@ -87,6 +88,16 @@ Partial Class FrmNewOperation
         BtnCalculateArsQuantity.Text = "Calcular pago"
         BtnCalculateArsQuantity.UseVisualStyleBackColor = True
         ' 
+        ' LblNewOperationTitle
+        ' 
+        LblNewOperationTitle.AutoSize = True
+        LblNewOperationTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
+        LblNewOperationTitle.Location = New Point(190, 37)
+        LblNewOperationTitle.Name = "LblNewOperationTitle"
+        LblNewOperationTitle.Size = New Size(262, 30)
+        LblNewOperationTitle.TabIndex = 23
+        LblNewOperationTitle.Text = "Registro de operaciones"
+        ' 
         ' FrmNewOperation
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -94,6 +105,7 @@ Partial Class FrmNewOperation
         AutoSizeMode = AutoSizeMode.GrowAndShrink
         BackColor = Color.FromArgb(CByte(175), CByte(179), CByte(183))
         ClientSize = New Size(642, 347)
+        Controls.Add(LblNewOperationTitle)
         Controls.Add(BtnConfirmOperation)
         Controls.Add(TxtArsQuantity)
         Controls.Add(LblArsQuantity)
@@ -114,4 +126,5 @@ Partial Class FrmNewOperation
     Friend WithEvents LblUsdQuantity As Label
     Friend WithEvents TxtUsdQuantity As TextBox
     Friend WithEvents BtnCalculateArsQuantity As Button
+    Friend WithEvents LblNewOperationTitle As Label
 End Class
