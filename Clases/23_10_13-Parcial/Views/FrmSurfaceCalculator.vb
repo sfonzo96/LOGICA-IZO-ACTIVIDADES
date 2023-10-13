@@ -1,6 +1,4 @@
-﻿Imports System.Globalization
-
-Public Class FrmSurfaceCalculator
+﻿Public Class FrmSurfaceCalculator
     Private Sub BtnCalculateSurface_Click(sender As Object, e As EventArgs) Handles BtnCalculateSurface.Click
         Try
             If Not IsNumeric(TxtWidth.Text) OrElse Not IsNumeric(TxtLength.Text) AndAlso Decimal.Parse(TxtWidth.Text) <= 0 OrElse Decimal.Parse(TxtLength.Text) <= 0 Then
@@ -12,5 +10,10 @@ Public Class FrmSurfaceCalculator
         Catch ex As Exception
             MessageBox.Show("Algo no está bien, revisa que los valores sean correctos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
+    End Sub
+
+    Private Sub ClearForm()
+        TxtWidth.Clear()
+        TxtLength.Clear()
     End Sub
 End Class

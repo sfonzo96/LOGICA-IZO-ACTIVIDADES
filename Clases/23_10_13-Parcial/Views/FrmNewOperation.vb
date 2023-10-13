@@ -15,13 +15,15 @@ Public Class FrmNewOperation
                 Dim fsOperationsService As New FsOperationsDataService()
                 Dim fsSuccess As Boolean = fsOperationsService.AddOperation(FrmExchange.UsdValue, UsdQuantity, ArsQuantity)
 
-                If Not (dbSuccess AndAlso fsSuccess) Then
-                    MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Else
-                    MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                End If
+            If Not (dbSuccess AndAlso fsSuccess) Then
+                MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ArsQuantity = 0
+                UsdQuantity = 0
+            End If
 
-                ClearForm()
+            ClearForm()
         Catch sqlEx As SqlException
             MessageBox.Show(sqlEx.Message, "DB error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Catch ex As Exception
