@@ -5,7 +5,7 @@ Public Class FsUsersDataService
     Public Function GetUser(username As String) As User
 
         If Not File.Exists(FilePath) Then
-            Throw New Exception($"No se encontró el archivo en ¨{FilePath}")
+            Throw New Exception("No se pudo acceder al registro de usuarios. Contacte al soporte.")
         End If
 
         Dim user As User = Nothing
@@ -19,7 +19,7 @@ Public Class FsUsersDataService
         End Using
 
         If user Is Nothing Then
-            Throw New Exception("No se pudo recuperar el usuario. Intentelo luego.")
+            Throw New Exception("No se pudo recuperar la información del usuario. Contacte al soporte.")
         End If
         Return user
     End Function
