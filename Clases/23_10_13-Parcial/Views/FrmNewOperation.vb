@@ -10,12 +10,16 @@ Public Class FrmNewOperation
                 Return
             End If
 
-            Dim dbOperationsService As New DbOperationsDataService()
-            Dim dbSuccess As Boolean = dbOperationsService.AddOperation(FrmExchange.UsdValue, UsdQuantity, ArsQuantity)
-            Dim fsOperationsService As New FsOperationsDataService()
-            Dim fsSuccess As Boolean = fsOperationsService.AddOperation(FrmExchange.UsdValue, UsdQuantity, ArsQuantity)
+            Dim operationsService
+            If DatabaseService.PersistenceSystem = "SQL" Then
+                operationsService = New DbOperationsDataService()
+            Else
+                operationsService = New FsOperationsDataService()
+            End If
 
-            If Not (dbSuccess AndAlso fsSuccess) Then
+            Dim addSuccessfull As Boolean = operationsService.AddOperation(FrmExchange.UsdValue, UsdQuantity, ArsQuantity)
+
+            If Not (addSuccessfull) Then
                 MessageBox.Show("La operación no pudo ser registrada.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 MessageBox.Show("Operación registrada con éxito.", "Estado de registro", MessageBoxButtons.OK, MessageBoxIcon.Information)

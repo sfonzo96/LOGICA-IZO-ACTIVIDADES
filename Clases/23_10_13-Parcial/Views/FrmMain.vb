@@ -38,4 +38,8 @@
         PanelSubForms.Controls.Add(form)
         form.Show()
     End Sub
+
+    Private Sub PanelControlBar_Paint(sender As Object, e As PaintEventArgs) Handles PanelControlBar.Paint
+
+    End Sub
 End Class

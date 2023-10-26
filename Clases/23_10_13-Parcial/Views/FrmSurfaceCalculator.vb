@@ -7,6 +7,7 @@
             End If
 
             TxtSurface.Text = Decimal.Parse(TxtWidth.Text.Replace(".", ",")) * Decimal.Parse(TxtLength.Text.Replace(".", ","))
+            ClearForm()
         Catch ex As Exception
             MessageBox.Show("Algo no está bien, revisa que los valores sean correctos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try

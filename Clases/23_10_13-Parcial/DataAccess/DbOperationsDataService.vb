@@ -1,9 +1,9 @@
 ﻿Imports System.Data.SqlClient
 Public Class DbOperationsDataService
     ' MSI String
-    Private ReadOnly ConnectionString As String = "Server=localhost\MSSQLSERVER01;Database=exchange;Trusted_Connection=True;"
+    'Private ReadOnly ConnectionString As String = "Server=localhost\MSSQLSERVER01;Database=exchange;Trusted_Connection=True;"
     ' Compaq String
-    'Private ReadOnly ConnectionString As String = "Server=localhost;Database=exchange;Trusted_Connection=True;"
+    Private ReadOnly ConnectionString As String = "Server=localhost;Database=exchange;Trusted_Connection=True;"
     Public Function AddOperation(usdValue As Decimal, usdQuantity As Decimal, arsQuantity As Decimal) As Boolean
         Dim query As String = "INSERT INTO operations (usd_value,usd_quantity,ars_quantity) values (@usd_value,@usd_quantity,@ars_quantity)"
         Using Connection As New SqlConnection(ConnectionString)
