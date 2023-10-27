@@ -1,8 +1,9 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class DbUsersDataService
+    Implements IUsersService
     Private ReadOnly ConnectionString As String = "Server=localhost;Database=exchange;Trusted_Connection=True;"
-    Public Function GetUser(username As String) As User
+    Private Shared DbUsersDataService As DbUsersDataService
+    Public Function GetUser(username As String) As User Implements IUsersService.GetUser
         Dim query As String = "SELECT * FROM users WHERE username = @username"
         Dim user As User
         Using Connection As New SqlConnection(ConnectionString)
@@ -25,5 +26,12 @@ Public Class DbUsersDataService
             End Using
         End Using
         Return user
+    End Function
+    Public Shared Function GetInstance() As DbUsersDataService
+        If DbUsersDataService Is Nothing Then
+            DbUsersDataService = New DbUsersDataService()
+        End If
+
+        Return DbUsersDataService
     End Function
 End Class

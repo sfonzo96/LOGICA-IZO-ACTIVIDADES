@@ -1,8 +1,9 @@
 ﻿Imports System.IO
-
 Public Class FsOperationsDataService
-    Private ReadOnly FilePath As String = "..\..\..\TxtData\operations1.txt"
-    Public Function  AddOperation(usdValue As Decimal, usdQuantity As Decimal, arsQuantity As Decimal) As Boolean
+    Implements IOperationsService
+    Private ReadOnly FilePath As String = "..\..\..\TxtData\operations.txt"
+    Private Shared FsOperationsServiceInstance As FsOperationsDataService
+    Public Function AddOperation(usdValue As Decimal, usdQuantity As Decimal, arsQuantity As Decimal) As Boolean Implements IOperationsService.AddOperation
         CreateFileIfNotExists()
 
         Using writer As New StreamWriter(FilePath, True)
@@ -13,8 +14,7 @@ Public Class FsOperationsDataService
         Return True
     End Function
 
-    Public Function GetOperations() As List(Of Operation)
-
+    Public Function GetOperations() As List(Of Operation) Implements IOperationsService.GetOperations
         CreateFileIfNotExists()
 
         Dim operations As New List(Of Operation)
@@ -30,7 +30,7 @@ Public Class FsOperationsDataService
         Return operations
     End Function
 
-    Public Function MapOperationFromTxtLine(operationData As String) As Operation
+    Public Shared Function MapOperationFromTxtLine(operationData As String) As Operation
         Dim operationProperties As String() = operationData.Split(";")
         Dim operation As New Operation(operationProperties(0), operationProperties(1), operationProperties(2), operationProperties(3))
         Return operation
@@ -41,4 +41,12 @@ Public Class FsOperationsDataService
             File.CreateText(FilePath).Dispose()
         End If
     End Sub
+
+    Public Shared Function GetInstance() As FsOperationsDataService
+        If FsOperationsServiceInstance Is Nothing Then
+            FsOperationsServiceInstance = New FsOperationsDataService()
+        End If
+
+        Return FsOperationsServiceInstance
+    End Function
 End Class

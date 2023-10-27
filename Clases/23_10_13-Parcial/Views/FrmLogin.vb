@@ -1,4 +1,5 @@
-﻿Public Class FrmLogin
+﻿Imports System.Data.SqlClient
+Public Class FrmLogin
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Login(TxtUsername.Text, TxtPassword.Text)
     End Sub
@@ -10,12 +11,7 @@
     End Sub
     Private Sub Login(username As String, password As String)
         Try
-            Dim userService
-            If DatabaseService.PersistenceSystem = "SQL" Then
-                userService = New DbUsersDataService()
-            Else
-                userService = New FsUsersDataService()
-            End If
+            Dim userService As IUsersService = DataAccessFactory.CreateUserDataService()
 
             Dim user As User = userService.GetUser(username)
             If user.Username = username AndAlso user.Password = password Then
