@@ -28,6 +28,7 @@ Partial Class FrmMain
         PanelMenu = New Panel()
         PicLogoIzo = New PictureBox()
         PanelControlBar = New Panel()
+        LblWindowTitle = New Label()
         BtnMinimizeForm = New Button()
         BtnCloseForm = New Button()
         PanelSubForms = New Panel()
@@ -86,6 +87,7 @@ Partial Class FrmMain
         ' PanelControlBar
         ' 
         PanelControlBar.BackColor = Color.FromArgb(CByte(45), CByte(74), CByte(83))
+        PanelControlBar.Controls.Add(LblWindowTitle)
         PanelControlBar.Controls.Add(BtnMinimizeForm)
         PanelControlBar.Controls.Add(BtnCloseForm)
         PanelControlBar.Dock = DockStyle.Top
@@ -93,6 +95,17 @@ Partial Class FrmMain
         PanelControlBar.Name = "PanelControlBar"
         PanelControlBar.Size = New Size(933, 31)
         PanelControlBar.TabIndex = 4
+        ' 
+        ' LblWindowTitle
+        ' 
+        LblWindowTitle.AutoSize = True
+        LblWindowTitle.Font = New Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        LblWindowTitle.ForeColor = Color.WhiteSmoke
+        LblWindowTitle.Location = New Point(18, 6)
+        LblWindowTitle.Name = "LblWindowTitle"
+        LblWindowTitle.Size = New Size(41, 19)
+        LblWindowTitle.TabIndex = 7
+        LblWindowTitle.Text = "Inicio"
         ' 
         ' BtnMinimizeForm
         ' 
@@ -155,6 +168,7 @@ Partial Class FrmMain
         PanelMenu.PerformLayout()
         CType(PicLogoIzo, ComponentModel.ISupportInitialize).EndInit()
         PanelControlBar.ResumeLayout(False)
+        PanelControlBar.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -166,4 +180,5 @@ Partial Class FrmMain
     Friend WithEvents BtnCloseForm As Button
     Friend WithEvents BtnMinimizeForm As Button
     Friend WithEvents PanelSubForms As Panel
+    Friend WithEvents LblWindowTitle As Label
 End Class

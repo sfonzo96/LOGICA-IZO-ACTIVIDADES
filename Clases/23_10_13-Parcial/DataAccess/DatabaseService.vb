@@ -1,13 +1,13 @@
 ﻿Imports System.Data.SqlClient
 
-Module DatabaseService
-    Private ReadOnly SQLServerConnectionString As String = "Server=localhost;Trusted_Connection=True;"
-    Private ReadOnly ExchangeDbConnectionString As String = "Server=localhost;Database=exchange;Trusted_Connection=True;"
-    Private Property DbName As String = "exchange"
-    Private ReadOnly Users As String(,) = New String(,) {{"izo", "izo2023", "Izo"}, {"mauricio", "mauri123", "Mauricio"}, {"santi", "santi123", "Santiago"}}
-    Public Property PersistenceSystem As String = "SQL"
+Class DatabaseService
+    Private Shared ReadOnly SQLServerConnectionString As String = "Server=localhost;Trusted_Connection=True;"
+    Private Shared ReadOnly ExchangeDbConnectionString As String = "Server=localhost;Database=exchange;Trusted_Connection=True;"
+    Private Shared Property DbName As String = "exchange"
+    Private Shared ReadOnly Users As String(,) = New String(,) {{"izo", "izo2023", "Izo"}, {"mauricio", "mauri123", "Mauricio"}, {"santi", "santi123", "Santiago"}}
+    Public Shared Property PersistenceSystem As String = "SQL"
 
-    Private Sub CreateDatabase()
+    Private Shared Sub CreateDatabase()
         Dim query As String = "CREATE DATABASE " & DbName
         Using Connection As New SqlConnection(SQLServerConnectionString)
             Using sqlCommand As New SqlCommand()
@@ -24,7 +24,7 @@ Module DatabaseService
         End Using
     End Sub
 
-    Private Sub CreateTableOperations()
+    Private Shared Sub CreateTableOperations()
         Dim tableName As String = "operations"
         Dim query As String = "CREATE TABLE " & tableName & "(
             id BIGINT IDENTITY(1,1) PRIMARY KEY,
@@ -48,7 +48,7 @@ Module DatabaseService
         End Using
     End Sub
 
-    Private Sub CreateTableUsers()
+    Private Shared Sub CreateTableUsers()
         Dim tableName As String = "users"
         Dim query As String = "CREATE TABLE " & tableName & "(
             id BIGINT IDENTITY(1,1) PRIMARY KEY, -- Quitar y convertir username en primary key? O compuesta?
@@ -71,7 +71,7 @@ Module DatabaseService
         End Using
     End Sub
 
-    Private Sub AddUsers(username As String, password As String, nickname As String)
+    Private Shared Sub AddUsers(username As String, password As String, nickname As String)
         Dim query As String = "INSERT INTO users (username,password,nickname) values (@username,@password,@nickname)"
         Using Connection As New SqlConnection(ExchangeDbConnectionString)
             Using sqlCommand As New SqlCommand()
@@ -91,7 +91,7 @@ Module DatabaseService
         End Using
     End Sub
 
-    Private Function DbExists() As Boolean
+    Private Shared Function DbExists() As Boolean
         Dim query As String = "SELECT COUNT(*) FROM sys.databases WHERE name = @dbName"
 
         Using Connection As New SqlConnection(SQLServerConnectionString)
@@ -112,9 +112,7 @@ Module DatabaseService
         End Using
     End Function
 
-
-
-    Public Sub InitDatabase()
+    Public Shared Sub InitDatabase()
         Try
             If Not DbExists() Then
                 CreateDatabase()
@@ -128,5 +126,4 @@ Module DatabaseService
             PersistenceSystem = "FILE"
         End Try
     End Sub
-
-End Module
+End Class

@@ -1,9 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class DbUsersDataService
-    ' MSI String
-    'Private ReadOnly ConnectionString As String = "Server=localhost\MSSQLSERVER01;Database=exchange;Trusted_Connection=True;"
-    ' Compaq String
     Private ReadOnly ConnectionString As String = "Server=localhost;Database=exchange;Trusted_Connection=True;"
     Public Function GetUser(username As String) As User
         Dim query As String = "SELECT * FROM users WHERE username = @username"

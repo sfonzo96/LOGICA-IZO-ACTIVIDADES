@@ -2,10 +2,12 @@
     Private Sub BtnSurfaceCalculator_Click(sender As Object, e As EventArgs) Handles BtnSurfaceCalculator.Click
         Dim frmSurfaceCalculator As New FrmSurfaceCalculator()
         SetPanel(frmSurfaceCalculator)
+        SetWindowTitle("Calculo de superficies")
     End Sub
     Private Sub BtnExchange_Click(sender As Object, e As EventArgs) Handles BtnExchange.Click
         Dim frmExchange As New FrmExchange()
         SetPanel(frmExchange)
+        SetWindowTitle("Casa de cambio")
     End Sub
 
     Private Sub BtnCloseForm_Click(sender As Object, e As EventArgs) Handles BtnCloseForm.Click
@@ -39,7 +41,7 @@
         form.Show()
     End Sub
 
-    Private Sub PanelControlBar_Paint(sender As Object, e As PaintEventArgs) Handles PanelControlBar.Paint
-
+    Private Sub SetWindowTitle(title As String)
+        LblWindowTitle.Text = title
     End Sub
 End Class

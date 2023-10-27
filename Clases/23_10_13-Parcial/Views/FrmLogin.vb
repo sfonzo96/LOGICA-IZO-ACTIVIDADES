@@ -1,5 +1,4 @@
-﻿Imports System.Data.SqlClient
-Public Class FrmLogin
+﻿Public Class FrmLogin
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Login(TxtUsername.Text, TxtPassword.Text)
     End Sub
@@ -35,7 +34,7 @@ Public Class FrmLogin
     End Sub
     Private Sub FrmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TxtUsername.Focus()
-        InitDatabase()
+        DatabaseService.InitDatabase()
     End Sub
 
     Private Sub BtnCloseForm_Click(sender As Object, e As EventArgs) Handles BtnCloseForm.Click
