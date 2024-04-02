@@ -1,4 +1,0 @@
-﻿Cantidad USD:100, Cantidad ARS: 78000
-Cantidad USD:200, Cantidad ARS: 160000
-Cantidad USD:10, Cantidad ARS: 10000
-
