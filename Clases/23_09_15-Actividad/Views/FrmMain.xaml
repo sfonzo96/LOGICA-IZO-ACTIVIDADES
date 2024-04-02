@@ -1,0 +1,12 @@
+﻿<Window x:Class="FrmMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_23_09_15_Actividad"
+        mc:Ignorable="d"
+        Title="FrmMain" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="BtnGestionAlumnos" Content="Ver alumnos" HorizontalAlignment="Center" Height="49" VerticalAlignment="Center" Width="128"/>
+    </Grid>
+</Window>
